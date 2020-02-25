@@ -1838,7 +1838,7 @@ img.pswp__img {
     width: 390px;
   }
   .nav-right .title-list form span #tagswitch:checked +#tagsWitchIcon:after {
-    top: px;
+    top: 11px;
   }
   .nav-right .title-list form span #tagsWitchIcon:after {
     top: 9px;
