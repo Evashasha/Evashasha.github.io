@@ -844,7 +844,7 @@
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    background-color: #6190e8;
+    background-color: #f2bad8;
     color: #fff;
     outline: none;
     font-size: 0.75em;
@@ -1028,7 +1028,7 @@
 }
 .gt-container .gt-header-controls-tip {
     font-size: 0.875em;
-    color: #6190e8;
+    color: #f2bad8;
     text-decoration: none;
     vertical-align: sub;
 }
