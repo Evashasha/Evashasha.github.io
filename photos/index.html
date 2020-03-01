@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>一些css常识 | 伊娃的琴话 - 前端之恋</title>
-  <meta name="keywords" content=" html/css ">
-  <meta name="description" content="一些css常识 | 伊娃的琴话 - 前端之恋">
+  <title>我的相册 | 伊娃的琴话 - 前端之恋</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="我的相册 | 伊娃的琴话 - 前端之恋">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="&lt;!DOCTYPE html&gt;">
 <meta property="og:type" content="website">
@@ -52,6 +52,11 @@
   <input class="theme_blog_path" value="">
 </div>
 
+<script src="/js/photoswipe.min.js?v=1.0.1"></script>
+<script src="/js/photoswipe-ui-default.min.js?v=1.0.1"></script>
+<link rel="stylesheet" href="./ins.css">
+<link rel="stylesheet" href="./photoswipe.css">
+<link rel="stylesheet" href="./default-skin/default-skin.css">
 <body>
 <aside class="nav">
     <div class="nav-left">
@@ -416,155 +421,48 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-css-sense" class="article article-type-post" itemscope itemprop="blogPost">
-    
-        <h1 class="article-title">一些css常识</h1>
-    
-    <div class="article-meta">
         
+        <!-- Root element of PhotoSwipe. Must have class pswp. -->
+        <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="pswp__bg"></div>
+            <div class="pswp__scroll-wrap">
+                <div class="pswp__container">
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                </div>
+                <div class="pswp__ui pswp__ui--hidden">
+                    <div class="pswp__top-bar">
+                        <div class="pswp__counter"></div>
+                        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                        <button class="pswp__button pswp__button--share" title="Share"></button>
+                        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                        <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                        <!-- element will get class pswp__preloader--active when preloader is running -->
+                        <div class="pswp__preloader">
+                            <div class="pswp__preloader__icn">
+                                <div class="pswp__preloader__cut">
+                                    <div class="pswp__preloader__donut"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                        <div class="pswp__share-tooltip"></div>
+                    </div>
+                    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                    </button>
+                    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                    </button>
+                    <div class="pswp__caption">
+                        <div class="pswp__caption__center"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
         
-        
-        <span class="book">
-            
-                <a  data-rel="html/css">html/css</a>
-            
-        </span>
-        
-        
-        <span class="tag">
-            
-            <a class="color4">html/css</a>
-            
-        </span>
-        
-    </div>
-    <div class="article-meta">
-        
-        创建时间:<time class="date" title='更新时间: 2020-02-28 13:39:04'>2020-02-28 13:06</time>
-        
-    </div>
-    <div class="article-meta">
-        
-        
-        <span id="busuanzi_container_page_pv">
-            阅读:<span id="busuanzi_value_page_pv">
-                <span class="count-comment">
-                    <span class="spinner">
-                      <div class="cube1"></div>
-                      <div class="cube2"></div>
-                    </span>
-                </span>
-            </span>
-        </span>
-        
-        
-        <span class="top-comment" title="跳转至评论区">
-            <a href="#comments">
-                评论:<span class="count-comment">
-                    <span class="spinner">
-                      <div class="cube1"></div>
-                      <div class="cube2"></div>
-                    </span>
-                </span>
-            </a>
-        </span>
-        
-    </div>
-    
-    <div class="toc-ref">
-    
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#常识"><span class="toc-text">常识</span></a></li></ol>
-    
-<style>
-    .left-col .switch-btn,
-    .left-col .switch-area {
-        display: none;
-    }
-    .toc-level-3 i,
-    .toc-level-3 ol {
-        display: none !important;
-    }
-</style>
-</div>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="常识"><a href="#常识" class="headerlink" title="常识"></a>常识</h2><ul>
-<li>不要使用过小的图片做背景平铺，宽高 1px 的图片平铺出一个宽高 200px 的区域，需要 200*200=40, 000 次，占用资源。</li>
-<li>无边框。推荐的写法是 border:none;border:0; 只是定义边框宽度为零，但边框样式、颜色还是会被浏览器解析，占用资源</li>
-<li>慎用 <em> 通配符， CSS 中的所有标签，不管用的不用的，过时的先进的，一视同仁被cue到，大大的占用资源。比如初始化时切忌用</em>，而是有选择的初始化标签</li>
-<li>样式放头上，脚本放脚下。不内嵌，只外链</li>
-<li>坚决不用 CSS 表达式</li>
-<li>CSS 的十六进制颜色代码缩写。习惯了缩写及小写，这才知道，原来不是推荐的写法，为的是减少解析所占用的资源。但同时会增加文件体积。孰优孰劣，有待仔细考</li>
-<li>使用 引用样式表，而不是通过@import 导入</li>
-<li>一般来说，PNG 比 GIF 要小，小得多。再者，GIF 中有多少颜色是被浪费的，很值得优化</li>
-<li>千万不要在 HTML 中缩放图片，一者不好看，二者占资源</li>
-<li>正文字体最好用偶数，12px、14px、16px，效果非常好。特例，15px。</li>
-</ul>
-<hr>
-<p>文章原链接 <a href="http://www.nowamagic.net/csszone/css_15CssCommon.php" target="_blank" rel="noopener">css的15个常识</a></p>
-
-      
-       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 673222391@qq.com哦! </span>
-    </div>
-</article>
-
-
-<p>
-    <a  class="dashang" onclick="dashangToggle()">赏</a>
-</p>
-
-
-<div class="article_copyright">
-    文章:<code class="article_number"></code>篇
-    总字数:<code class="site_word_count"></code>字
-    访问人数：<code class="site_uv"></code>人，访问量：<code class="site_pv"></code>次。
-    <p><span class="copy-title">文章标题:</span>一些css常识</p>
-    
-    <p><span class="copy-title">本文作者:</span><a  title="Eva">Eva</a></p>
-    <p><span class="copy-title">发布时间:</span>2020-02-28, 13:06:58</p>
-    <p><span class="copy-title">最后更新:</span>2020-02-28, 13:39:04</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/02/28/css-sense/" title="一些css常识">http://eva1314kawayi.com/2020/02/28/css-sense/</a>
-    <p>
-        <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
-    </p>
-</div>
-
-
-
-    <div id="comments"></div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
-
-<script type="text/javascript">
-    $.getScript('/js/gitalk.js', function () {
-        var gitalk = new Gitalk({
-            clientID: '',
-            clientSecret: '',
-            repo: 'Evashasha.github.io',
-            owner: 'Evashasha',
-            admin: ['Evashasha'],
-            id: decodeURI(location.pathname),
-            distractionFreeMode: 'true',
-            language: 'zh-CN',
-            perPage: parseInt('10',10)
-        })
-        gitalk.render('comments')
-    })
-</script>
-
-
-
-
-    
-
-
-<div><a href="http://eva1314kawayi.com/2020/02/28/asii-table/">上一篇：HTML特殊字符编码对照表</a></div>
-
-
-<div><a href="http://eva1314kawayi.com/2020/02/28/css-priority/">下一篇：前端基础 - CSS选择器的权重与优先规则</a></div>
-
-
-
+        <div class="instagram"></div>
     </div>
     <div class="copyright">
         <p class="footer-entry">©2016-2019 Eva</p>
@@ -869,4 +767,5 @@ color="255,255,255" opacity='1' zIndex="-2" count="100" src="//cdn.bootcss.com/c
 <div style="position:absolute; bottom: 0; left: 50%;transform: translateX(-50%);z-index: 40">
     <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=36871866&auto=1&height=66"></iframe>
 </div>
+<script>!function(){var t=function(t){var e=document.createElement("script");document.getElementsByTagName("body")[0].appendChild(e),e.setAttribute("src",t)};setTimeout(function(){t("./ins.js")},0)}()</script>
 </html>
