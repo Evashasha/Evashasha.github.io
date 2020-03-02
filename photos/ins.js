@@ -117,8 +117,8 @@
           var data = res.list[j].arr;
           var liTmpl = "";
           for (var i = 0, len = data.link.length; i < len; i++) {
-            var minSrc = 'http://eva1314kawayi.com/blog_photos/min_photos/' + data.link[i];
-            var src = 'http://eva1314kawayi.com/blog_photos/photos/' + data.link[i];
+            var minSrc = 'https://eva1314kawayi.com/blog_photos/min_photos/' + data.link[i];
+            var src = 'https://eva1314kawayi.com/blog_photos/photos/' + data.link[i];
             var type = data.type[i];
             var target = src + (type === 'video' ? '.mp4' : '.jpg');
             src += '';
