@@ -130,7 +130,7 @@
                   <figcaption style="display:none" itemprop="caption description">' + data.text[i] + '</figcaption>\
               </figure>';
           }
-          ulTmpl = ulTmpl + '<section class="archives album"><h1 class="year">' + data.year + '年<em>' + data.month + '月</em></h1>\
+          ulTmpl = ulTmpl + '<section class="archives album"><h2 class="year">' + data.year + '年<em>' + data.month + '月</em></h2>\
           <ul class="img-box-ul">' + liTmpl + '</ul>\
           </section>';
         }
@@ -194,6 +194,7 @@
   
       var Ins = {
         init: function init() {
+          console.log("这里加载图片做了吗");
           loadData(function(data) {
             render(data);
           });

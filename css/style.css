@@ -591,9 +591,9 @@ div.ac > ul > li:before,
 }
 .full-toc #rocket {
   position: fixed;
-  bottom: 30px;
+  bottom: 280px;
   top: auto;
-  right: 20px;
+  right: 80px;
   font-size: 40px;
   z-index: 21;
   display: none;
