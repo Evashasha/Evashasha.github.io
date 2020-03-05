@@ -23,10 +23,10 @@
     width: 390px;
   }
   .nav-right .title-list form span #tagswitch:checked +#tagsWitchIcon:after {
-    top: 9px;
+    top: 0px;
   }
   .nav-right .title-list form span #tagsWitchIcon:after {
-    top: 9px;
+    top: 0px;
   }
   .nav-right .title-list nav a .post-title {
     font-size: 15px;

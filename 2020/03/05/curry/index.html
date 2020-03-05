@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>hexo基本命令 | 伊娃的琴话 - 前端之恋</title>
-  <meta name="keywords" content=" hexo ">
-  <meta name="description" content="hexo基本命令 | 伊娃的琴话 - 前端之恋">
+  <title>curry函数(柯里化) | 伊娃的琴话 - 前端之恋</title>
+  <meta name="keywords" content=" javascript ">
+  <meta name="description" content="curry函数(柯里化) | 伊娃的琴话 - 前端之恋">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta property="og:type" content="website">
 <meta property="og:title" content="404">
@@ -493,9 +493,9 @@
 <div class="post">
     <div class="pjax">
         
-<article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+<article id="post-curry" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">hexo基本命令</h1>
+        <h1 class="article-title">curry函数(柯里化)</h1>
     
     <div class="article-meta">
         
@@ -503,21 +503,21 @@
         
         <span class="book">
             
-                <a  data-rel="hexo">hexo</a>
+                <a  data-rel="javascript">javascript</a>
             
         </span>
         
         
         <span class="tag">
             
-            <a class="color5">hexo</a>
+            <a class="color1">javascript</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2020-02-25 17:20:42'>2020-02-24 11:38</time>
+        创建时间:<time class="date" title='更新时间: 2020-03-05 14:40:44'>2020-03-05 14:32</time>
         
     </div>
     <div class="article-meta">
@@ -566,7 +566,7 @@
 
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#解释"><span class="toc-text">解释</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#使用场景"><span class="toc-text">使用场景</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -582,15 +582,11 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <h2 id="解释"><a href="#解释" class="headerlink" title="解释"></a>解释</h2><ul>
+<li>curry化是一切的基础，curry化是为了解决函数式编程时遇到的状态转换时需要的单参数需求。不过现在很多时候也用于延时执行，和插件编写。</li>
+<li>柯里化实际上是这样的一个转换过程：把接受多个参数的函数变换成接受一个单一参数(译注：最初函数的第一个参数)的函数，如果其他的参数是必要的，返回接受余下的参数且返回结果的新函数。<h2 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景"></a>使用场景</h2>示例：<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//curry函数</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">curry</span>(<span class="params">fn</span>)</span>&#123;</span><br><span class="line">    <span class="comment">//固定参数</span></span><br><span class="line">    <span class="keyword">let</span> fixed_args = <span class="built_in">Array</span>.prototype.slice.call(<span class="built_in">arguments</span>,<span class="number">1</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="keyword">let</span> args = <span class="built_in">Array</span>.prototype.slice.call(<span class="built_in">arguments</span>)||[];</span><br><span class="line">        args = fixed_args.concat(args);</span><br><span class="line">        <span class="keyword">return</span> fn.apply(<span class="keyword">this</span>,args);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/***********************************************************************************</span></span><br><span class="line"><span class="comment">*curry函数使用场景</span></span><br><span class="line"><span class="comment">*使用场景1：url组合，很多时候我们需要拼接protocal domain 和 path,</span></span><br><span class="line"><span class="comment">*大多数时候protocal和domain是不变的，但是如果</span></span><br><span class="line"><span class="comment">*使用字符串拼接会出现很多的废代码，写死会出现无法修改的情况，这个时候curry函数就有用武之地了，</span></span><br><span class="line"><span class="comment">*所以curry在这个场景下的意义是灵活性</span></span><br><span class="line"><span class="comment">*************************************************************************************/</span></span><br><span class="line"><span class="keyword">let</span> $baiduCurry = curry(<span class="function"><span class="keyword">function</span>(<span class="params">protocal,domain,path</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">`<span class="subst">$&#123;protocal&#125;</span>://<span class="subst">$&#123;domain&#125;</span><span class="subst">$&#123;path&#125;</span>`</span>;</span><br><span class="line">&#125;,<span class="string">"https"</span>,<span class="string">"www.baidu.com"</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log( $baiduCurry(<span class="string">"/images"</span>) );</span><br><span class="line"><span class="built_in">console</span>.log( $baiduCurry(<span class="string">"/books"</span>) );</span><br><span class="line"><span class="comment">//https://www.baidu.com/images</span></span><br><span class="line"><span class="comment">//https://www.baidu.com/books</span></span><br><span class="line"><span class="comment">/*******************************************************</span></span><br><span class="line"><span class="comment">*使用场景2：将柯里化后的callback参数传递给map, filter等函数。</span></span><br><span class="line"><span class="comment">*虽然看起来有点多余，但是这里person_curry的方法是可以反复使用</span></span><br><span class="line"><span class="comment">*的,如果下次你想写一个所有age字段的集合函数，就节省下来了大堆</span></span><br><span class="line"><span class="comment">*的代码，所以curry在这个场景下的意义是代码复用性</span></span><br><span class="line"><span class="comment">********************************************************/</span></span><br><span class="line"><span class="keyword">let</span> persons = [&#123;<span class="attr">name</span>:<span class="string">"hcj1"</span>,<span class="attr">age</span>:<span class="number">18</span>&#125;,&#123;<span class="attr">name</span>:<span class="string">"hcj2"</span>,<span class="attr">age</span>:<span class="number">19</span>&#125;,&#123;<span class="attr">name</span>:<span class="string">"hcj3"</span>,<span class="attr">age</span>:<span class="number">20</span>&#125;];</span><br><span class="line"><span class="keyword">let</span> person_curry = curry(<span class="function"><span class="keyword">function</span>(<span class="params">key</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params">obj</span>)</span>&#123;</span><br><span class="line">        <span class="keyword">return</span> obj[key];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line"><span class="keyword">let</span> names = persons.map(person_curry(<span class="string">"name"</span>));</span><br><span class="line"><span class="built_in">console</span>.log(names);</span><br><span class="line"><span class="comment">// ["hcj1", "hcj2", "hcj3"]</span></span><br></pre></td></tr></table></figure>
+原文：<a href="https://blog.csdn.net/huangssssx/article/details/86698256" target="_blank" rel="noopener">柯里化</a></li>
+</ul>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 673222391@qq.com哦! </span>
@@ -607,12 +603,12 @@
     文章:<code class="article_number"></code>篇
     总字数:<code class="site_word_count"></code>字
     访问人数：<code class="site_uv"></code>人，访问量：<code class="site_pv"></code>次。
-    <p><span class="copy-title">文章标题:</span>hexo基本命令</p>
+    <p><span class="copy-title">文章标题:</span>curry函数(柯里化)</p>
     
     <p><span class="copy-title">本文作者:</span><a  title="Eva">Eva</a></p>
-    <p><span class="copy-title">发布时间:</span>2020-02-24, 11:38:18</p>
-    <p><span class="copy-title">最后更新:</span>2020-02-25, 17:20:42</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/02/24/hello-world/" title="hexo基本命令">http://eva1314kawayi.com/2020/02/24/hello-world/</a>
+    <p><span class="copy-title">发布时间:</span>2020-03-05, 14:32:27</p>
+    <p><span class="copy-title">最后更新:</span>2020-03-05, 14:40:44</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/03/05/curry/" title="curry函数(柯里化)">http://eva1314kawayi.com/2020/03/05/curry/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
@@ -649,8 +645,8 @@
 
 
 
-<div><a href="http://eva1314kawayi.com/2020/02/25/wepack-base-command/">上一篇：webpack基本命令</a></div>
 
+<div><a href="http://eva1314kawayi.com/2020/03/05/javascript-tips/">下一篇：一些javascript小技巧</a></div>
 
 
 

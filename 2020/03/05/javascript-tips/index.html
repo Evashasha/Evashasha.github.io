@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>一些javascript小技巧 | 伊娃的琴话 - 前端之恋</title>
+  <meta name="keywords" content=" javascript ">
+  <meta name="description" content="一些javascript小技巧 | 伊娃的琴话 - 前端之恋">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta property="og:type" content="website">
+<meta property="og:title" content="404">
+<meta property="og:url" content="http://eva1314kawayi.com/404.html">
+<meta property="og:site_name" content="伊娃的琴话 - 前端之恋">
+<meta property="article:published_time" content="2076-11-29T08:54:34.955Z">
+<meta property="article:modified_time" content="2020-03-03T06:16:40.000Z">
+<meta property="article:author" content="Eva">
+<meta property="article:tag" content="技术文章、技术心得">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.0.1" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.0.1" rel="stylesheet">
+
+<link href="/css/animate.min.css" rel="stylesheet">
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/jquery.autocomplete.min.js?v=1.0.1" ></script>
+
+<script src="/js/highlight.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="/js/nprogress.min.js"></script>
+
+
+
+<script src="/js/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.0.1" ></script>
+<link rel="stylesheet" href="/share/css/share.min.css">
+<script src="/share/js/social-share.min.js"></script>
+<script src="/js/text.js"></script>
+
+    <script src="/live2dw/lib/L2Dwidget.min.js"></script>
+    <script src="/live2dw/lib/L2Dwidget.0.min.js"></script>
+    
+    
+<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="伊娃的琴话 - 前端之恋" type="application/atom+xml">
+</head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="false">
+  <input class="theme_blog_path" value="">
+</div>
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/" class="avatar_target">
+    <img class="avatar" src="/img/avatar.jpg" />
+</a>
+<div class="author">
+    <span>Eva</span>
+</div>
+
+<div class="icon">
+    
+        
+        <a title="rss" href="/atom.xml" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-rss"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="github" href="https://github.com/Evashasha" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-github"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="facebook" href="https://www.facebook.com/faker.tops" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-facebook"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="cocos" href="https://forum.cocos.org/users/673222391/activity" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-cocos"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+    
+        
+    
+        
+        <a title="instagram" href="https://www.facebook.com/faker.tops" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-instagram"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+    
+        
+        <a title="weibo" href="https://www.weibo.com/u/6991144964/" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-weibo"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="jianshu" href="https://www.jianshu.com/u/5ba440104f7a" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-jianshu"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="zhihu" href="https://www.zhihu.com/people/evalee-21-46/posts" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-zhihu"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+    
+        
+        <a title="oschina" href="https://my.oschina.net/u/4464322" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-oschina"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+    
+        
+        <a title="email" href="mailto:673222391@qq.com" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-email"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="qq" href="http://wpa.qq.com/msgrd?v=3&uin=673222391&site=qq&menu=yes" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-qq"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="kugou" href="https://www.kugou.com/" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-kugou"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="neteasemusic" href="https://music.163.com/#/user/home?id=256264311" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-neteasemusic"></use>
+                </svg>
+            
+        </a>
+        
+    
+</div>
+
+
+
+<a class="more-menus">更多菜单</a>
+
+
+<ul>
+    <li><div class="all active">全部文章<small>(16)</small></div></li>
+    
+        
+            
+            <li><div data-rel="其他">其他<small>(6)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="html/css">html/css<small>(2)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="hexo">hexo<small>(2)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="javascript">javascript<small>(4)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="webpack">webpack<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+    
+    
+    <a class="dynamic-menu " target="_self"   href="/photos">相册</a>
+    
+    
+    <a class="dynamic-menu site_url"   href="/resume">简历</a>
+    
+    
+    
+    </div>
+    <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="16">
+
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="back-title-list"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://www.mtain.top/">Mtain</a></li>
+            
+            <li><a target="_blank" href="https://blog.elfred.top/">Elfred</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <form onkeydown="if(event.keyCode === 13){return false;}">
+        <input id="local-search-input" class="search" type="text" placeholder="Search..." />
+        <i class="cross"></i>
+        <span>
+            <label for="tagswitch">Tags:</label>
+            <input id="tagswitch" type="checkbox" style="display: none" />
+            <i id="tagsWitchIcon"></i>
+        </span>
+    </form>
+    <div class="tags-list">
+    
+    <li class="article-tag-list-item">
+        <a class="color4">htmlchar</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">html/css</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">hexo</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">emmet</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">前端小技巧</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">javascript</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">windows</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">webpack</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">脚手架工具</a>
+    </li>
+    
+    <div class="clearfix"></div>
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        <a  class="javascript "
+           href="/2020/03/05/curry/"
+           data-tag="javascript"
+           data-author="" >
+            <span class="post-title" title="curry函数(柯里化)">curry函数(柯里化)</span>
+            <span class="post-date" title="2020-03-05 14:32:27">2020/03/05</span>
+        </a>
+        
+        <a  class="javascript "
+           href="/2020/03/05/javascript-tips/"
+           data-tag="javascript"
+           data-author="" >
+            <span class="post-title" title="一些javascript小技巧">一些javascript小技巧</span>
+            <span class="post-date" title="2020-03-05 13:28:55">2020/03/05</span>
+        </a>
+        
+        <a  class="javascript "
+           href="/2020/03/05/analyze-eval/"
+           data-tag="javascript"
+           data-author="" >
+            <span class="post-title" title="谈谈eval">谈谈eval</span>
+            <span class="post-date" title="2020-03-05 11:22:09">2020/03/05</span>
+        </a>
+        
+        <a  class="其他 "
+           href="/2020/03/04/windows-system-command/"
+           data-tag="windows"
+           data-author="" >
+            <span class="post-title" title="Windows命令">Windows命令</span>
+            <span class="post-date" title="2020-03-04 12:39:32">2020/03/04</span>
+        </a>
+        
+        <a  class="其他 "
+           href="/2020/03/02/front-end-performance/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="前端性能优化">前端性能优化</span>
+            <span class="post-date" title="2020-03-02 23:32:07">2020/03/02</span>
+        </a>
+        
+        <a  class="其他 "
+           href="/2020/03/02/mac-ssh/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Mac下查看和生成ssh密钥">Mac下查看和生成ssh密钥</span>
+            <span class="post-date" title="2020-03-02 22:44:41">2020/03/02</span>
+        </a>
+        
+        <a  class="其他 "
+           href="/2020/03/02/mac-command/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Mac终端常用命令">Mac终端常用命令</span>
+            <span class="post-date" title="2020-03-02 21:25:29">2020/03/02</span>
+        </a>
+        
+        <a  class="其他 "
+           href="/2020/03/02/modify-chrome-browser-redirection/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="解决Chrome浏览器强制http重定向到https的问题">解决Chrome浏览器强制http重定向到https的问题</span>
+            <span class="post-date" title="2020-03-02 18:03:28">2020/03/02</span>
+        </a>
+        
+        <a  class="hexo "
+           href="/2020/02/29/hexo-mermaid/"
+           data-tag="hexo"
+           data-author="" >
+            <span class="post-title" title="图表mermaid sequence flow">图表mermaid sequence flow</span>
+            <span class="post-date" title="2020-02-29 14:11:10">2020/02/29</span>
+        </a>
+        
+        <a  class="其他 "
+           href="/2020/02/28/asii-table/"
+           data-tag="htmlchar"
+           data-author="" >
+            <span class="post-title" title="HTML特殊字符编码对照表">HTML特殊字符编码对照表</span>
+            <span class="post-date" title="2020-02-28 13:42:03">2020/02/28</span>
+        </a>
+        
+        <a  class="html/css "
+           href="/2020/02/28/css-sense/"
+           data-tag="html/css"
+           data-author="" >
+            <span class="post-title" title="一些css常识">一些css常识</span>
+            <span class="post-date" title="2020-02-28 13:06:58">2020/02/28</span>
+        </a>
+        
+        <a  class="html/css "
+           href="/2020/02/28/css-priority/"
+           data-tag="html/css"
+           data-author="" >
+            <span class="post-title" title="前端基础 - CSS选择器的权重与优先规则">前端基础 - CSS选择器的权重与优先规则</span>
+            <span class="post-date" title="2020-02-28 11:19:06">2020/02/28</span>
+        </a>
+        
+        <a  class=""
+           href="/2020/02/28/emmet-base/"
+           data-tag="emmet,前端小技巧"
+           data-author="" >
+            <span class="post-title" title="关于emmet">关于emmet</span>
+            <span class="post-date" title="2020-02-28 11:09:51">2020/02/28</span>
+        </a>
+        
+        <a  class="javascript "
+           href="/2020/02/27/triva-of-javascript/"
+           data-tag="前端小技巧,javascript"
+           data-author="" >
+            <span class="post-title" title="javascript冷知识">javascript冷知识</span>
+            <span class="post-date" title="2020-02-27 09:12:18">2020/02/27</span>
+        </a>
+        
+        <a  class="webpack "
+           href="/2020/02/25/wepack-base-command/"
+           data-tag="webpack,脚手架工具"
+           data-author="" >
+            <span class="post-title" title="webpack基本命令">webpack基本命令</span>
+            <span class="post-date" title="2020-02-25 17:24:32">2020/02/25</span>
+        </a>
+        
+        <a  class="hexo "
+           href="/2020/02/24/hello-world/"
+           data-tag="hexo"
+           data-author="" >
+            <span class="post-title" title="hexo基本命令">hexo基本命令</span>
+            <span class="post-date" title="2020-02-24 11:38:18">2020/02/24</span>
+        </a>
+        
+    </nav>
+</div>
+    </div>
+    <div class="hide-list">
+        <div class="semicircle">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div class="post">
+    <div class="pjax">
+        
+<article id="post-javascript-tips" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">一些javascript小技巧</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            
+                <a  data-rel="javascript">javascript</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a class="color1">javascript</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+        创建时间:<time class="date" title='更新时间: 2020-03-05 14:24:58'>2020-03-05 13:28</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读:<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+        <span class="top-comment" title="跳转至评论区">
+            <a href="#comments">
+                评论:<span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </a>
+        </span>
+        
+    </div>
+    
+
+    <div class="social-share">分享到：</div>
+
+    <script>
+        //var arrShare = [];
+        //var strShare = "<!--% for (var i in theme.shareIcons){ %--><!--%=theme.shareIcons[i] %-->,<!--% } %-->";
+        //arrShare = strShare.split(",");
+        //arrShare.pop();
+        socialShare(".social-share",{
+            //sites:["weibo"],
+            //sites: arrShare,
+            wechatQrcodeTitle: "分享到微信朋友圈",
+            wechatQrcodeHelper: '<p>扫码后点击右上角</p><p>将本文分享至朋友圈</p>'
+        });
+    </script>
+
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#vs"><span class="toc-text">&#x3D;&#x3D;&#x3D; vs &#x3D;&#x3D;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#字符串转换成数值的方法"><span class="toc-text">字符串转换成数值的方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#清空一个数组"><span class="toc-text">清空一个数组</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#对数组排序进行”洗牌”-随机排序"><span class="toc-text">对数组排序进行”洗牌”(随机排序)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#返回对象的函数能够用于链式操作"><span class="toc-text">返回对象的函数能够用于链式操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#字符串安全连接"><span class="toc-text">字符串安全连接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#更快的四舍五入"><span class="toc-text">更快的四舍五入</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#给回调函数传递参数"><span class="toc-text">给回调函数传递参数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#在数组插入一个项"><span class="toc-text">在数组插入一个项</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#改善嵌套条件"><span class="toc-text">改善嵌套条件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#以非ASCII字符形式来排序字符串"><span class="toc-text">以非ASCII字符形式来排序字符串</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#检查一个对象是否有属性"><span class="toc-text">检查一个对象是否有属性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#提升"><span class="toc-text">提升</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#apply将数组转换成参数列表"><span class="toc-text">apply将数组转换成参数列表</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Math-max-得到数组中最大的一项"><span class="toc-text">Math.max 得到数组中最大的一项</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Math-min-可以实现得到数组中最小的一项"><span class="toc-text">Math.min  可以实现得到数组中最小的一项</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Array-prototype-push-可以实现两个数组合并"><span class="toc-text">Array.prototype.push 可以实现两个数组合并</span></a></li></ol></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="vs"><a href="#vs" class="headerlink" title="=== vs =="></a>=== vs ==</h2><p>==（或者!=）做对比的时候会将进行对比的两者转换到同一类型再比较。===（或者!==）则不会，他会将进行对比的两者做类型对比和值对比，相对于 == ，=== 的对比会更加严谨。</p>
+<blockquote>
+<p>[10] == 10 // true<br>[10] === 10 // false<br>“10” == 10 // true<br>“10” === 10 // false<br>[] == 0 // true<br>[] === 0 // false<br>“” == false // true 但是 true == “a” 是false<br>“” === false // false</p>
+</blockquote>
+<h2 id="字符串转换成数值的方法"><a href="#字符串转换成数值的方法" class="headerlink" title="字符串转换成数值的方法"></a>字符串转换成数值的方法</h2><p>示例 +”1” // 1  +”-2” //-2 -“1” //-1</p>
+<h2 id="清空一个数组"><a href="#清空一个数组" class="headerlink" title="清空一个数组"></a>清空一个数组</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> list = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>];</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">empty</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="comment">//清空数组</span></span><br><span class="line">    list = [];</span><br><span class="line">&#125;</span><br><span class="line">empty();</span><br></pre></td></tr></table></figure>
+<p>下面这种性能更高：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> list = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>];</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">empty</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="comment">//清空数组</span></span><br><span class="line">    list.length = <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line">empty();</span><br></pre></td></tr></table></figure><br>· list =[] 将一个变量指定个引用到那个数组，而其他引用都不受影响。这意味着，对于先前数组的内容的引用仍然保留在内存中，从而导致内存泄漏。<br>· list.length = 0 删除数组内的所有东西，这不需要引用任何其他的东西</p>
+<h2 id="对数组排序进行”洗牌”-随机排序"><a href="#对数组排序进行”洗牌”-随机排序" class="headerlink" title="对数组排序进行”洗牌”(随机排序)"></a>对数组排序进行”洗牌”(随机排序)</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">shuffle</span>(<span class="params">arr</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> i,</span><br><span class="line">    j,</span><br><span class="line">    temp;</span><br><span class="line">    <span class="keyword">for</span> (i = arr.length - <span class="number">1</span>; i &gt; <span class="number">0</span>; i--) &#123;</span><br><span class="line">        j = <span class="built_in">Math</span>.floor(<span class="built_in">Math</span>.random() * (i + <span class="number">1</span>));</span><br><span class="line">        temp = arr[i];</span><br><span class="line">        arr[i] = arr[j];</span><br><span class="line">        arr[j] = temp;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> arr; </span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>];</span><br><span class="line"><span class="keyword">var</span> b = shuffle(a);</span><br><span class="line"><span class="built_in">console</span>.log(b);</span><br><span class="line"><span class="comment">// [2, 7, 8, 6, 5, 3, 1, 4]</span></span><br></pre></td></tr></table></figure>
+<h2 id="返回对象的函数能够用于链式操作"><a href="#返回对象的函数能够用于链式操作" class="headerlink" title="返回对象的函数能够用于链式操作"></a>返回对象的函数能够用于链式操作</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">name</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.name = name;</span><br><span class="line">    <span class="keyword">this</span>.sayName = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">"Hello my name is: "</span>, <span class="keyword">this</span>.name);</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>;</span><br><span class="line">    &#125;;</span><br><span class="line">    <span class="keyword">this</span>.changeName = <span class="function"><span class="keyword">function</span>(<span class="params">name</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.name = name;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>;</span><br><span class="line">    &#125;;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> person = <span class="keyword">new</span> Person(<span class="string">"John"</span>);</span><br><span class="line">person.sayName().changeName(<span class="string">"Timmy"</span>).sayName();</span><br><span class="line"><span class="comment">//Hello my name is: John</span></span><br><span class="line"><span class="comment">//Hello my name is: Timmy</span></span><br></pre></td></tr></table></figure>
+<h2 id="字符串安全连接"><a href="#字符串安全连接" class="headerlink" title="字符串安全连接"></a>字符串安全连接</h2><p>假设你有一些类型未知的变量，你想将它们连接起来。可以肯定的是，算法操作不会在级联时应用:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> one = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">var</span> two = <span class="number">2</span>;</span><br><span class="line"><span class="keyword">var</span> three = <span class="string">'3'</span>;</span><br><span class="line"><span class="keyword">var</span> result = <span class="string">''</span>.concat(one, two, three); <span class="comment">//"123"</span></span><br></pre></td></tr></table></figure><br>对join和concat进行比较，他们的执行速度是几乎一样的。</p>
+<h2 id="更快的四舍五入"><a href="#更快的四舍五入" class="headerlink" title="更快的四舍五入"></a>更快的四舍五入</h2><p>“<del>“，也叫double NOT运算符。你可以更快的使用它来作为Math.floor()替代品。<br>单位移~将32位转换输入-(输入+1)，因此双位移将输入转换为-(-(输入+1))，这是个趋于0的伟大的工具。对于输入的数字，它将模仿Math.ceil()取负值和Math.floor()取正值。如果执行失败，则返回0，这可能在用来代替Math.floor()失败时返回一个NaN的时候发挥作用。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 单位移</span></span><br><span class="line"><span class="built_in">console</span>.log(~<span class="number">1337</span>) <span class="comment">// -1338</span></span><br><span class="line"><span class="comment">// 双位移</span></span><br><span class="line"><span class="built_in">console</span>.log(~~<span class="number">47.11</span>) <span class="comment">// -&gt; 47</span></span><br><span class="line"><span class="built_in">console</span>.log(~~<span class="number">-12.88</span>) <span class="comment">// -&gt; -12</span></span><br><span class="line"><span class="built_in">console</span>.log(~~<span class="number">1.9999</span>) <span class="comment">// -&gt; 1</span></span><br><span class="line"><span class="built_in">console</span>.log(~~<span class="number">3</span>) <span class="comment">// -&gt; 3</span></span><br><span class="line"><span class="comment">//失败的情况</span></span><br><span class="line"><span class="built_in">console</span>.log(~~[]) <span class="comment">// -&gt; 0 </span></span><br><span class="line"><span class="built_in">console</span>.log(~~<span class="literal">NaN</span>) <span class="comment">// -&gt; 0</span></span><br><span class="line"><span class="built_in">console</span>.log(~~<span class="literal">null</span>) <span class="comment">// -&gt; 0</span></span><br><span class="line"><span class="comment">//大于32位整数则失败</span></span><br><span class="line"><span class="built_in">console</span>.log(~~(<span class="number">2147483647</span> + <span class="number">1</span>) === (<span class="number">2147483647</span> + <span class="number">1</span>)) <span class="comment">// -&gt; 0</span></span><br></pre></td></tr></table></figure><br>虽然</del>可能有更好的表现，为了可读性，请使用Math.floor()。</p>
+<h2 id="给回调函数传递参数"><a href="#给回调函数传递参数" class="headerlink" title="给回调函数传递参数"></a>给回调函数传递参数</h2><p>在默认情况下，你无法将参数传给回调函数，如下：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">callback</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'Hi human'</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">document</span>.getElementById(<span class="string">'someelem'</span>).addEventListener(<span class="string">'click'</span>, callback);</span><br></pre></td></tr></table></figure><br>可以采取JavaScript闭包的优点来给回调函数传参（curry function）,如下：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">callback</span>(<span class="params">a, b</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">'sum = '</span>, (a+b));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> x = <span class="number">1</span>, y = <span class="number">2</span>;</span><br><span class="line"><span class="built_in">document</span>.getElementById(<span class="string">'someelem'</span>).addEventListener(<span class="string">'click'</span>, callback(x, y));</span><br></pre></td></tr></table></figure><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> alertText = <span class="function"><span class="keyword">function</span>(<span class="params">text</span>) </span>&#123;</span><br><span class="line">    alert(text);</span><br><span class="line">&#125;;</span><br><span class="line"><span class="built_in">document</span>.getElementById(<span class="string">'someelem'</span>).addEventListener(<span class="string">'click'</span>, alertText.bind(<span class="keyword">this</span>, <span class="string">'hello'</span>));</span><br></pre></td></tr></table></figure></p>
+<blockquote>
+<p>bind:<br>javascript1.8.5版本中原生实现了此方法，目前IE9+，ff4+，chrome7+支持此方法，opera和safari不支持（MDN上的说明）。<br>bind的作用和apply，call类似都是改变函数的execute context，也就是 runtime 时 this 关键字的指向。但是使用方法略有不同。一个函数进行bind后可稍后执行。<br>bind 方法实现原理：绑定this  和 Currying：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getConfig</span>(<span class="params">colors,size,otherOptions</span>)</span>&#123;</span><br><span class="line"></span><br><span class="line">　　<span class="built_in">console</span>.log(colors,size,otherOptions)</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> defaultConfig = getConfig.bind(<span class="literal">null</span>,<span class="string">"#f00"</span>,<span class="string">"1024*768"</span>);</span><br><span class="line"></span><br><span class="line">defaultConfig(<span class="string">"123"</span>);　　<span class="comment">//#f00 1024*768 123</span></span><br><span class="line"></span><br><span class="line">defaultConfig(<span class="string">"345"</span>);　　<span class="comment">//#f00 1024*768 345</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//因为bind 方法是EMS5 以后提出的方法，对于老的浏览器，可以使用手写一个bind 方法</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(!<span class="built_in">Function</span>.prototype.bind)&#123;</span><br><span class="line"></span><br><span class="line">　　<span class="built_in">Function</span>.prototype.bind = <span class="function"><span class="keyword">function</span>(<span class="params">oThis</span>)</span>&#123;</span><br><span class="line"></span><br><span class="line">　　　　<span class="keyword">if</span>(typeOf <span class="keyword">this</span> !== <span class="string">'function'</span>)&#123;</span><br><span class="line"></span><br><span class="line">　　　　　　<span class="keyword">throw</span> <span class="keyword">new</span> <span class="built_in">TypeError</span>(<span class="string">'What is trying to be bound is not callable'</span>)</span><br><span class="line"></span><br><span class="line">　　　　&#125;</span><br><span class="line"></span><br><span class="line">　　　　<span class="keyword">var</span> aArgs = <span class="built_in">Array</span>.prototype.slice.call(<span class="built_in">arguments</span>,<span class="number">1</span>),</span><br><span class="line"></span><br><span class="line">　　　　　　fToBind = <span class="keyword">this</span>,</span><br><span class="line"></span><br><span class="line">　　　　　　fNOP = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;;</span><br><span class="line"></span><br><span class="line">　　　　　　fBound = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line"></span><br><span class="line">　　　　　　　　<span class="keyword">return</span> fToBind.apply(<span class="keyword">this</span> <span class="keyword">instanceof</span> fNOP?<span class="keyword">this</span>:oThis,</span><br><span class="line"></span><br><span class="line">　　　　　　　　　　　aArgs.concat(<span class="built_in">Array</span>.prototype.slice.call(<span class="built_in">arguments</span>)))</span><br><span class="line"></span><br><span class="line">　　　　　　&#125;</span><br><span class="line"></span><br><span class="line">　　　　fNOP.prototype = <span class="keyword">this</span>.prototype;</span><br><span class="line"></span><br><span class="line">　　　　fBound.prototype = <span class="keyword">new</span> fNOP();</span><br><span class="line"></span><br><span class="line">　　　　<span class="keyword">return</span> fBound;</span><br><span class="line"></span><br><span class="line">　　&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<h2 id="在数组插入一个项"><a href="#在数组插入一个项" class="headerlink" title="在数组插入一个项"></a>在数组插入一个项</h2><p>使用push在数组的末尾添加元素，使用unshift在开始的位置，或者在中间使用splice。<br>push:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>];</span><br><span class="line">arr.push(<span class="number">6</span>);</span><br><span class="line">arr[arr.length] = <span class="number">6</span>; <span class="comment">//在Chrome 47.0.2526.106 (Mac OS X 10.11.1)上提高了 43% 的速度</span></span><br></pre></td></tr></table></figure><br>unshift:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ar arr = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>];</span><br><span class="line">arr.unshift(<span class="number">0</span>);</span><br><span class="line">[<span class="number">0</span>].concat(arr); <span class="comment">//在Chrome 47.0.2526.106 (Mac OS X 10.11.1)上提高了 98% 的速度`</span></span><br></pre></td></tr></table></figure><br>unshift编辑原有的数组，concat返回一个新数组</p>
+<h2 id="改善嵌套条件"><a href="#改善嵌套条件" class="headerlink" title="改善嵌套条件"></a>改善嵌套条件</h2><p>if语句嵌套。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (color) &#123;</span><br><span class="line">    <span class="keyword">if</span> (color === <span class="string">'black'</span>) &#123;</span><br><span class="line">        printBlackBackground();</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (color === <span class="string">'red'</span>) &#123;</span><br><span class="line">        printRedBackground();</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (color === <span class="string">'blue'</span>) &#123;</span><br><span class="line">        printBlueBackground();</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (color === <span class="string">'green'</span>) &#123;</span><br><span class="line">        printGreenBackground();</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        printYellowBackground();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br>一个改善的办法是用switch语句代替嵌套的if语句。虽然它是更加简洁，更加有序，但不推荐这样做，因为很难debug。这里指出原因。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">switch</span>(color) &#123;</span><br><span class="line">    <span class="keyword">case</span> <span class="string">'black'</span>:</span><br><span class="line">        printBlackBackground();</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">case</span> <span class="string">'red'</span>:</span><br><span class="line">        printRedBackground();</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">case</span> <span class="string">'blue'</span>:</span><br><span class="line">        printBlueBackground();</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">case</span> <span class="string">'green'</span>:</span><br><span class="line">        printGreenBackground();</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">default</span>:</span><br><span class="line">        printYellowBackground();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br>但是，当我们有多个判断条件的情况下呢？在这种情况下，如果我们想让它更加简洁，更加有序，我们可以使用switch。如果我们将true的作为一个参数传递给该switch语句，它可以让我们在每一个情况下放置一个条件。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">switch</span>(<span class="literal">true</span>) &#123;</span><br><span class="line">    <span class="keyword">case</span> (<span class="keyword">typeof</span> color === <span class="string">'string'</span> &amp;&amp; color === <span class="string">'black'</span>):</span><br><span class="line">        printBlackBackground();</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">case</span> (<span class="keyword">typeof</span> color === <span class="string">'string'</span> &amp;&amp; color === <span class="string">'red'</span>):</span><br><span class="line">        printRedBackground();</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">case</span> (<span class="keyword">typeof</span> color === <span class="string">'string'</span> &amp;&amp; color === <span class="string">'blue'</span>):</span><br><span class="line">        printBlueBackground();</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">case</span> (<span class="keyword">typeof</span> color === <span class="string">'string'</span> &amp;&amp; color === <span class="string">'green'</span>):</span><br><span class="line">        printGreenBackground();</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">    <span class="keyword">case</span> (<span class="keyword">typeof</span> color === <span class="string">'string'</span> &amp;&amp; color === <span class="string">'yellow'</span>):</span><br><span class="line">        printYellowBackground();</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br>但我们必须避免在每一个条件下进行多次检查，尽量避免使用switch。我们也必须考虑到最有效的方法是通过一个object。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> colorObj = &#123;</span><br><span class="line">    <span class="string">'black'</span>: printBlackBackground,</span><br><span class="line">    <span class="string">'red'</span>: printRedBackground,</span><br><span class="line">    <span class="string">'blue'</span>: printBlueBackground,</span><br><span class="line">    <span class="string">'green'</span>: printGreenBackground,</span><br><span class="line">    <span class="string">'yellow'</span>: printYellowBackground</span><br><span class="line">&#125;;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">if</span> (color <span class="keyword">in</span> colorObj) &#123;</span><br><span class="line">    colorObj[color]();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="以非ASCII字符形式来排序字符串"><a href="#以非ASCII字符形式来排序字符串" class="headerlink" title="以非ASCII字符形式来排序字符串"></a>以非ASCII字符形式来排序字符串</h2><p>JavaScript有个原生的方法对字符串格式的数组进行排序，做一个简单的array.sort()将会把字符串们按首字母的数序排列。当然，也可以提供自定义排序功能。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">'Shanghai'</span>, <span class="string">'New York'</span>, <span class="string">'Mumbai'</span>, <span class="string">'Buenos Aires'</span>].sort();</span><br><span class="line"><span class="comment">// ["Buenos Aires", "Mumbai", "New York", "Shanghai"]</span></span><br></pre></td></tr></table></figure><br>当你试图用非ASCII字符，如 [‘é’, ‘a’, ‘ú’, ‘c’]这样的进行排序，你会得到一个奇怪的结果[‘c’, ‘e’, ‘á’, ‘ú’]，因为只有用英语的语言才能排序，所以发生这种情况。<br>看一个简单的例子：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Spanish</span></span><br><span class="line">[<span class="string">'único'</span>,<span class="string">'árbol'</span>, <span class="string">'cosas'</span>, <span class="string">'fútbol'</span>].sort();</span><br><span class="line"><span class="comment">// ["cosas", "fútbol", "árbol", "único"] // 错误的排序</span></span><br><span class="line"><span class="comment">// German</span></span><br><span class="line">[<span class="string">'Woche'</span>, <span class="string">'wöchentlich'</span>, <span class="string">'wäre'</span>, <span class="string">'Wann'</span>].sort();</span><br><span class="line"><span class="comment">// ["Wann", "Woche", "wäre", "wöchentlich"] // 错误的排序</span></span><br></pre></td></tr></table></figure><br>幸运的是，有两种方法来避免这种行为，ECMAScript国际化的API提供了localecompare和and Intl.Collator。<br>这两种方法都有自己的自定义参数，以便将其配置来充分的完成功能。<br>使用 localeCompare()<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">'único'</span>,<span class="string">'árbol'</span>, <span class="string">'cosas'</span>, <span class="string">'fútbol'</span>].sort(<span class="function"><span class="keyword">function</span> (<span class="params">a, b</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> a.localeCompare(b);</span><br><span class="line">&#125;);</span><br><span class="line"><span class="comment">// ["árbol", "cosas", "fútbol", "único"]</span></span><br><span class="line">[<span class="string">'Woche'</span>, <span class="string">'wöchentlich'</span>, <span class="string">'wäre'</span>, <span class="string">'Wann'</span>].sort(<span class="function"><span class="keyword">function</span> (<span class="params">a, b</span>) </span>&#123;</span><br><span class="line"><span class="keyword">return</span> a.localeCompare(b);</span><br><span class="line">&#125;);</span><br><span class="line"><span class="comment">// ["Wann", "wäre", "Woche", "wöchentlich"]</span></span><br></pre></td></tr></table></figure><br>使用 intl.collator()<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">'único'</span>,<span class="string">'árbol'</span>, <span class="string">'cosas'</span>, <span class="string">'fútbol'</span>].sort(<span class="built_in">Intl</span>.Collator().compare);</span><br><span class="line"><span class="comment">// ["árbol", "cosas", "fútbol", "único"]</span></span><br><span class="line">[<span class="string">'Woche'</span>, <span class="string">'wöchentlich'</span>, <span class="string">'wäre'</span>, <span class="string">'Wann'</span>].sort(<span class="built_in">Intl</span>.Collator().compare);</span><br><span class="line"><span class="comment">// ["Wann", "wäre", "Woche", "wöchentlich"]</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="检查一个对象是否有属性"><a href="#检查一个对象是否有属性" class="headerlink" title="检查一个对象是否有属性"></a>检查一个对象是否有属性</h2><ul>
+<li>第一种<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> myObject = &#123;</span><br><span class="line">    name: <span class="string">'@tips_js'</span></span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">if</span> (myObject.name) &#123; ... &#125;</span><br></pre></td></tr></table></figure></li>
+<li>第二种<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> myObject = &#123;</span><br><span class="line">    name: <span class="string">'@tips_js'</span></span><br><span class="line">&#125;;</span><br><span class="line">myObject.hasOwnProperty(<span class="string">'name'</span>); <span class="comment">// true</span></span><br><span class="line"><span class="string">'name'</span> <span class="keyword">in</span> myObject; <span class="comment">// true</span></span><br><span class="line">myObject.hasOwnProperty(<span class="string">'valueOf'</span>); <span class="comment">// false, valueOf 是从原型链继承的</span></span><br><span class="line"><span class="string">'valueOf'</span> <span class="keyword">in</span> myObject; <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> myFunc = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.name = <span class="string">'@tips_js'</span>;</span><br><span class="line">&#125;;</span><br><span class="line">myFunc.prototype.age = <span class="string">'10 days'</span>;</span><br><span class="line"><span class="keyword">var</span> user = <span class="keyword">new</span> myFunc();</span><br><span class="line">user.hasOwnProperty(<span class="string">'name'</span>); <span class="comment">// true</span></span><br><span class="line">user.hasOwnProperty(<span class="string">'age'</span>); <span class="comment">// false, 因为age是原型链上的</span></span><br></pre></td></tr></table></figure>
+<h2 id="提升"><a href="#提升" class="headerlink" title="提升"></a>提升</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">doTheThing</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="comment">// 错误: notDeclared is not defined</span></span><br><span class="line">    <span class="built_in">console</span>.log(notDeclared);</span><br><span class="line">    <span class="comment">// 输出: undefined</span></span><br><span class="line">    <span class="built_in">console</span>.log(definedLater);</span><br><span class="line">    <span class="keyword">var</span> definedLater;</span><br><span class="line">    definedLater = <span class="string">'I am defined!'</span></span><br><span class="line">    <span class="comment">// 输出: 'I am defined!'</span></span><br><span class="line">    <span class="built_in">console</span>.log(definedLater)</span><br><span class="line">    <span class="comment">// Outputs: undefined</span></span><br><span class="line">    <span class="built_in">console</span>.log(definedSimulateneously);</span><br><span class="line">    <span class="keyword">var</span> definedSimulateneously = <span class="string">'I am defined!'</span></span><br><span class="line">    <span class="comment">// 输出: 'I am defined!'</span></span><br><span class="line">    <span class="built_in">console</span>.log(definedSimulateneously)</span><br><span class="line">    <span class="comment">// 输出: 'I did it!'</span></span><br><span class="line">    doSomethingElse();</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">doSomethingElse</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">'I did it!'</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 错误: undefined is not a function</span></span><br><span class="line">    functionVar();</span><br><span class="line">    <span class="keyword">var</span> functionVar = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">'I did it!'</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="apply将数组转换成参数列表"><a href="#apply将数组转换成参数列表" class="headerlink" title="apply将数组转换成参数列表"></a>apply将数组转换成参数列表</h2><p>apply可以将一个数组默认的转换为一个参数列表([param1,param2,param3] 转换为 param1,param2,param3) 这个如果让我们用程序来实现将数组的每一个项,来转换为参数的列表。</p>
+<h3 id="Math-max-得到数组中最大的一项"><a href="#Math-max-得到数组中最大的一项" class="headerlink" title="Math.max 得到数组中最大的一项"></a>Math.max 得到数组中最大的一项</h3><p>因为Math.max 参数里面不支持Math.max([param1,param2]) 也就是数组  </p>
+<p>但是它支持Math.max(param1,param2,param3…),所以可以根据刚才apply的那个特点来解决 var max=Math.max.apply(null,array),这样轻易的可以得到一个数组中最大的一项  </p>
+<p>(apply会将一个数组转换为一个参数接一个参数的传递给方法)  </p>
+<p> 注意：这块在调用的时候第一个参数给了一个null,这个是因为没有对象去调用这个方法,我只需要用这个方法帮我运算,得到返回的结果就行,.所以直接传递了一个null过去<br> <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Math</span>.max.apply(<span class="literal">null</span>,[<span class="number">19</span>,<span class="number">2</span>,<span class="number">4</span>,<span class="number">100</span>,<span class="number">2</span>,<span class="number">5</span>,<span class="number">8</span>])</span><br><span class="line"><span class="number">100</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="Math-min-可以实现得到数组中最小的一项"><a href="#Math-min-可以实现得到数组中最小的一项" class="headerlink" title="Math.min  可以实现得到数组中最小的一项"></a>Math.min  可以实现得到数组中最小的一项</h3><p> 同Math.max思想 : var min=Math.min.apply(null,array);<br> <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"> <span class="built_in">Math</span>.min.apply(<span class="literal">null</span>,[<span class="number">19</span>,<span class="number">2</span>,<span class="number">4</span>,<span class="number">100</span>,<span class="number">2</span>,<span class="number">5</span>,<span class="number">8</span>])</span><br><span class="line"><span class="number">2</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="Array-prototype-push-可以实现两个数组合并"><a href="#Array-prototype-push-可以实现两个数组合并" class="headerlink" title="Array.prototype.push 可以实现两个数组合并"></a>Array.prototype.push 可以实现两个数组合并</h3><p> push方法没有提供push一个数组,但是它提供了push(param1,param,…paramN) 所以同样也可以通过apply来装换一下这个数组,即:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr1=<span class="keyword">new</span> <span class="built_in">Array</span>(<span class="string">"1"</span>,<span class="string">"2"</span>,<span class="string">"3"</span>);   </span><br><span class="line"><span class="keyword">var</span> arr2=<span class="keyword">new</span> <span class="built_in">Array</span>(<span class="string">"4"</span>,<span class="string">"5"</span>,<span class="string">"6"</span>); </span><br><span class="line"><span class="built_in">Array</span>.prototype.push.apply(arr1,arr2);</span><br></pre></td></tr></table></figure><br>上面的例子中arr1调用了push方法,参数是通过apply将数组转换为参数列表的集合</p>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 673222391@qq.com哦! </span>
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">赏</a>
+</p>
+
+
+<div class="article_copyright">
+    文章:<code class="article_number"></code>篇
+    总字数:<code class="site_word_count"></code>字
+    访问人数：<code class="site_uv"></code>人，访问量：<code class="site_pv"></code>次。
+    <p><span class="copy-title">文章标题:</span>一些javascript小技巧</p>
+    
+    <p><span class="copy-title">本文作者:</span><a  title="Eva">Eva</a></p>
+    <p><span class="copy-title">发布时间:</span>2020-03-05, 13:28:55</p>
+    <p><span class="copy-title">最后更新:</span>2020-03-05, 14:24:58</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/03/05/javascript-tips/" title="一些javascript小技巧">http://eva1314kawayi.com/2020/03/05/javascript-tips/</a>
+    <p>
+        <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+    </p>
+</div>
+
+
+
+    <div id="comments"></div>
+<link rel="stylesheet" href="/css/gitalk.css">
+
+<script type="text/javascript">
+    $.getScript('/js/gitalk.js', function () {
+        var gitalk = new Gitalk({
+            clientID: '90e3f37d37b4f43973dd',
+            clientSecret: '1916645b46aeef3cb154d17fe235f38b3554f2c8',
+            repo: 'Evashasha.github.io',
+            owner: 'Evashasha',
+            admin: ['Evashasha'],
+            id: decodeURI(location.pathname),
+            distractionFreeMode: 'true',
+            language: 'zh-CN',
+            perPage: parseInt('10',10)
+        })
+        gitalk.render('comments')
+    })
+</script>
+
+
+
+
+    
+
+
+
+
+
+<div><a href="http://eva1314kawayi.com/2020/03/05/curry/">上一篇：curry函数(柯里化)</a></div>
+
+
+<div><a href="http://eva1314kawayi.com/2020/03/05/analyze-eval/">下一篇：谈谈eval</a></div>
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">©2016-2019 Eva</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full"><span class="min "></span></button>
+<button class="post-toc-menu"><span class="post-toc-menu-icons"></span></button>
+<div class="post-toc"><span class="post-toc-title">目录</span>
+    <div class="post-toc-content">
+
+    </div>
+</div>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+<div class="acParent"></div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close"  onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>喜欢就点赞,疼爱就打赏</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">支付宝</label></span><span><label><input type="radio" name="pay" value="weixin">微信</label></span>
+    </div>
+</div>
+
+
+<script type="text/javascript"
+color="255,255,255" opacity='1' zIndex="-2" count="100" src="/js/canvas-nest.min.js?v=1.0.1"></script>
+<script src="/js/jquery.pjax.js?v=1.0.1" ></script>
+
+<script src="/js/script.js?v=1.0.1" ></script>
+<script>
+    var img_resize = 'default';
+    /*作者、标签的自动补全*/
+    $(function () {
+        $('.search').AutoComplete({
+            'data': ['#htmlchar','#html/css','#hexo','#emmet','#前端小技巧','#javascript','#windows','#webpack','#脚手架工具',],
+            'itemHeight': 20,
+            'width': 418
+        }).AutoComplete('show');
+    })
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $(".post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+        $('pre code').each(function(){
+            var lines = $(this).text().split('\n').length - 1, widther='';
+            if (lines>99) {
+                widther = 'widther'
+            }
+            var $numbering = $('<ul/>').addClass('pre-numbering ' + widther).attr("unselectable","on");
+            $(this).addClass('has-numbering ' + widther)
+                    .parent()
+                    .append($numbering);
+            for(var i=1;i<=lines;i++){
+                $numbering.append($('<li/>').text(i));
+            }
+        });
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+        /* 渲染*/
+        function HTMLDecode(text) {
+            var temp = document.createElement("div");
+            temp.innerHTML = text;
+            var output = temp.innerText || temp.textContent;
+            temp = null;
+            return output;
+        }
+        if (window.mermaid){
+            window.mermaid = null
+        }
+        $.getScript("//cdn.jsdelivr.net/npm/mermaid@8.4.2/dist/mermaid.min.js", function () {
+            var mermaidOptions = JSON.parse(HTMLDecode("{&#34;theme&#34;:&#34;default&#34;,&#34;startOnLoad&#34;:true,&#34;flowchart&#34;:{&#34;useMaxWidth&#34;:false,&#34;htmlLabels&#34;:true}}"))
+            if (window.mermaid) {
+                mermaid.initialize(mermaidOptions)
+                mermaid.contentLoaded()
+            }
+        })
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<style>
+    pre{
+        position: relative;
+        margin-bottom: 24px;
+        border-radius: 10px;
+        bo-rder: 1px solid #e2dede;
+        background: #FFF;
+        overflow: hidden;
+    }
+    code.has-numbering{
+        margin-left: 30px;
+    }
+    code.has-numbering.widther{
+        margin-left: 35px;
+    }
+    .pre-numbering{
+        margin: 0px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        padding: 0.5em 3px 0.7em 5px;
+        border-right: 1px solid #C3CCD0;
+        text-align: right;
+        color: #AAA;
+        background-color: #fafafa;
+    }
+    .pre-numbering.widther {
+        width: 35px;
+    }
+</style>
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+        .nav .hide-list.fullscreen {
+            left: 492px
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+    .post .pjax article .article-entry>ol, .post .pjax article .article-entry>ul, .post .pjax article>ol, .post .pjax article>ul{
+        border: #e2dede solid 1px;
+        border-radius: 10px;
+        padding: 10px 32px 10px 56px;
+    }
+    .post .pjax article .article-entry li>ol, .post .pjax article .article-entry li>ul,.post .pjax article li>ol, .post .pjax article li>ul{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .post .pjax article .article-entry>ol>li, .post .pjax article .article-entry>ul>li,.post .pjax article>ol>li, .post .pjax article>ul>li{
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+    .post .pjax article .article-entry li>ol>li, .post .pjax article .article-entry li>ul>li,.post .pjax article li>ol>li, .post .pjax article li>ul>li{
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+    .nav-right:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+        background: url("/img/peach_flower.jpeg");
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    
+
+    
+</style>
+
+
+
+
+
+
+<div class="mobile-menus-out" >
+
+</div>
+<div class="mobile-menus">
+    
+    
+    <a class="dynamic-menu " target="_self"   href="/photos">相册</a>
+    
+    
+    <a class="dynamic-menu site_url"   href="/resume">简历</a>
+    
+    
+    
+</div>
+
+</body>
+<div style="position:absolute; bottom: 0; left: 50%;transform: translateX(-50%);z-index: 40">
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=36871866&auto=1&height=66"></iframe>
+</div>
+
+<script>L2Dwidget.init({ model: { jsonPath: "/live2dw/assets/shizuku.model.json" }, display: { position: "right" }, mobile: { show: !1 }, log: !1, pluginJsPath: "lib/", pluginModelPath: "assets/", pluginRootPath: "live2dw/", tagMode: !1 })</script>
+</html>

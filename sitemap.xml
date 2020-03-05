@@ -2,9 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://eva1314kawayi.com/2020/03/05/curry/</loc>
+    
+    <lastmod>2020-03-05T06:40:44.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://eva1314kawayi.com/2020/03/05/javascript-tips/</loc>
+    
+    <lastmod>2020-03-05T06:24:58.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://eva1314kawayi.com/2020/03/05/analyze-eval/</loc>
+    
+    <lastmod>2020-03-05T05:12:40.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://eva1314kawayi.com/resume/index.html</loc>
+    
+    <lastmod>2020-03-05T03:03:24.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://eva1314kawayi.com/2020/02/29/hexo-mermaid/</loc>
     
-    <lastmod>2020-03-04T15:32:00.010Z</lastmod>
+    <lastmod>2020-03-05T01:59:26.000Z</lastmod>
     
   </url>
   
@@ -54,13 +82,6 @@
     <loc>http://eva1314kawayi.com/2020/03/02/modify-chrome-browser-redirection/</loc>
     
     <lastmod>2020-03-02T10:11:22.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://eva1314kawayi.com/resume/index.html</loc>
-    
-    <lastmod>2020-03-02T09:54:02.000Z</lastmod>
     
   </url>
   

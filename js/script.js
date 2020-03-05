@@ -481,7 +481,16 @@ function bind() {
         }
     });
     //初始化文章toc
-    $(".post-toc-content").html($(".post .pjax article .toc-ref .toc").clone());
+    var $elToc = $(".post .pjax article .toc-ref .toc");
+    var $elTocContent = $(".post-toc-content");
+    if($elToc.length){
+        $(".post-toc-menu").show();
+        $elTocContent.show();
+    }else{
+        $(".post-toc-menu").hide();
+        $elTocContent.hide();
+    }
+    $elTocContent.html($elToc.clone());
     //绑定文章toc的滚动事件
     $("a[href^='#']").click(function () {
         container.animate({scrollTop: $($(this).attr("href")).offset().top + container.scrollTop()}, 500);
