@@ -343,18 +343,22 @@ $(".full-toc .full,.semicircle").click(function (e) {
         return;
     }
     if ($(".full-toc .full").children().hasClass("min")) {
+
         $(".full-toc .full").children().removeClass("min").addClass("max");
         $(".nav, .hide-list").addClass("fullscreen");
         content.delay(200).queue(function () {
             $(".full-toc .full").addClass('fullscreen').dequeue();
         });
     } else {
+
         $(".full-toc .full").children().removeClass("max").addClass("min");
         $(".nav, .hide-list").removeClass("fullscreen");
         content.delay(300).queue(function () {
             $(".full-toc .full").removeClass('fullscreen').dequeue();
         });
     }
+
+
 });
 
 $(".post").hover(function () {
@@ -395,6 +399,12 @@ $(function () {
         $(".nav-right form .search").val("").change();
         $(".nav-right form .search").focus();
     });
+    /**
+     * 音乐列表展开收缩
+     */
+    $(".netease-music").on("click", function (e) {
+        $("#music-container").slideToggle();
+    });
     /*回到页首*/
     $("#rocket").on("click", function (e) {
         $(this).addClass("launch");
@@ -429,6 +439,21 @@ $(function () {
     $('.back-title-list').on('click', function () {
         $('.friends-area,.title-list').removeClass('friend');
     })
+    //if(window.innerWidth>1024){
+        $('body').ripples({
+            resolution: 512,
+            dropRadius: 20, //px
+            perturbance: .04,
+
+        });
+        $('.nav-right').ripples({
+            resolution: 512,
+            dropRadius: 20, //px
+            perturbance: .04,
+
+        });
+
+    //}
 });
 
 /*绑定新加载内容的点击事件*/

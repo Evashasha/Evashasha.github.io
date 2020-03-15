@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>浏览器兼容问题 | 伊娃的琴话 - 前端之恋</title>
+  <meta name="keywords" content=" 前端面试 , 前端兼容性 ">
+  <meta name="description" content="浏览器兼容问题 | 伊娃的琴话 - 前端之恋">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta property="og:type" content="website">
+<meta property="og:title" content="404">
+<meta property="og:url" content="http://eva1314kawayi.com/404.html">
+<meta property="og:site_name" content="伊娃的琴话 - 前端之恋">
+<meta property="article:published_time" content="2020-03-03T06:16:40.000Z">
+<meta property="article:modified_time" content="2020-03-03T06:16:40.000Z">
+<meta property="article:author" content="Eva">
+<meta property="article:tag" content="技术文章、技术心得">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="icon" href="/img/avatar.jpg">
+
+<link href="/css/style.css?v=1.0.1" rel="stylesheet">
+
+<link href="/css/hl_theme/atom-light.css?v=1.0.1" rel="stylesheet">
+
+<link href="/css/animate.min.css" rel="stylesheet">
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/jquery.autocomplete.min.js?v=1.0.1" ></script>
+
+<script src="/js/highlight.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="/js/nprogress.min.js"></script>
+
+
+
+<script src="/js/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.0.1" ></script>
+<link rel="stylesheet" href="/share/css/share.min.css">
+<script src="/share/js/social-share.min.js"></script>
+<script src="/js/text.js"></script>
+<script src="/js/jquery.ripples.js"></script>
+
+    <script src="/live2dw/lib/L2Dwidget.min.js"></script>
+    <script src="/live2dw/lib/L2Dwidget.0.min.js"></script>
+    
+    
+<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="伊娃的琴话 - 前端之恋" type="application/atom+xml">
+</head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="false">
+  <input class="theme_blog_path" value="">
+</div>
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/" class="avatar_target">
+    <img class="avatar" src="/img/avatar.jpg" />
+</a>
+<div class="author">
+    <span>Eva</span>
+</div>
+
+<div class="icon">
+    
+        
+        <a title="rss" href="/atom.xml" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-rss"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="github" href="https://github.com/Evashasha" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-github"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="facebook" href="https://www.facebook.com/faker.tops" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-facebook"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="cocos" href="https://forum.cocos.org/users/673222391/activity" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-cocos"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+    
+        
+    
+        
+        <a title="instagram" href="https://www.facebook.com/faker.tops" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-instagram"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+    
+        
+        <a title="weibo" href="https://www.weibo.com/u/6991144964/" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-weibo"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="jianshu" href="https://www.jianshu.com/u/5ba440104f7a" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-jianshu"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="zhihu" href="https://www.zhihu.com/people/evalee-21-46/posts" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-zhihu"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+    
+        
+        <a title="oschina" href="https://my.oschina.net/u/4464322" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-oschina"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+    
+        
+        <a title="email" href="mailto:673222391@qq.com" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-email"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="qq" href="http://wpa.qq.com/msgrd?v=3&uin=673222391&site=qq&menu=yes" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-qq"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="kugou" href="https://www.kugou.com/" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-kugou"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="neteasemusic" href="https://music.163.com/#/user/home?id=256264311" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-neteasemusic"></use>
+                </svg>
+            
+        </a>
+        
+    
+</div>
+
+
+
+<a class="more-menus">更多菜单</a>
+
+
+<ul>
+    <li><div class="all active">全部文章<small>(21)</small></div></li>
+    
+        
+            
+            <li><div data-rel="javascript">javascript<small>(4)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="其他">其他<small>(6)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="html/css">html/css<small>(2)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="hexo">hexo<small>(2)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="webpack">webpack<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+    
+    
+    <a class="dynamic-menu " target="_self"   href="/photos">相册</a>
+    
+    
+    <a class="dynamic-menu site_url"   href="/resume">简历</a>
+    
+    
+    
+    </div>
+    <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="21">
+
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="back-title-list"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://www.mtain.top/">Mtain</a></li>
+            
+            <li><a target="_blank" href="https://blog.elfred.top/">Elfred</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <form onkeydown="if(event.keyCode === 13){return false;}">
+        <input id="local-search-input" class="search" type="text" placeholder="Search..." />
+        <i class="cross"></i>
+        <span>
+            <label for="tagswitch">Tags:</label>
+            <input id="tagswitch" type="checkbox" style="display: none" />
+            <i id="tagsWitchIcon"></i>
+        </span>
+    </form>
+    <div class="tags-list">
+    
+    <li class="article-tag-list-item">
+        <a class="color1">javascript</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">htmlchar</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">前端面试</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">前端兼容性</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color4">html/css</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">emmet</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">前端小技巧</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color5">hexo</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">webpack</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color1">脚手架工具</a>
+    </li>
+    
+    <li class="article-tag-list-item">
+        <a class="color3">windows</a>
+    </li>
+    
+    <div class="clearfix"></div>
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        <a  class=""
+           href="/2020/03/09/node-base/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="node基础入门相关">node基础入门相关</span>
+            <span class="post-date" title="2020-03-09 11:38:44">2020/03/09</span>
+        </a>
+        
+        <a  class=""
+           href="/2020/03/06/browser-compatility/"
+           data-tag="前端面试,前端兼容性"
+           data-author="" >
+            <span class="post-title" title="浏览器兼容问题">浏览器兼容问题</span>
+            <span class="post-date" title="2020-03-06 17:17:22">2020/03/06</span>
+        </a>
+        
+        <a  class=""
+           href="/2020/03/06/interview-css/"
+           data-tag="前端面试"
+           data-author="" >
+            <span class="post-title" title="css面试题收集">css面试题收集</span>
+            <span class="post-date" title="2020-03-06 15:27:26">2020/03/06</span>
+        </a>
+        
+        <a  class=""
+           href="/2020/03/06/reg-exp/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="正则表达式枚举">正则表达式枚举</span>
+            <span class="post-date" title="2020-03-06 00:09:19">2020/03/06</span>
+        </a>
+        
+        <a  class=""
+           href="/2020/03/05/frontend-interview/"
+           data-tag="前端面试"
+           data-author="" >
+            <span class="post-title" title="前端面试系列(一)">前端面试系列(一)</span>
+            <span class="post-date" title="2020-03-05 22:49:04">2020/03/05</span>
+        </a>
+        
+        <a  class="javascript "
+           href="/2020/03/05/curry/"
+           data-tag="javascript"
+           data-author="" >
+            <span class="post-title" title="curry函数(柯里化)">curry函数(柯里化)</span>
+            <span class="post-date" title="2020-03-05 14:32:27">2020/03/05</span>
+        </a>
+        
+        <a  class="javascript "
+           href="/2020/03/05/javascript-tips/"
+           data-tag="javascript"
+           data-author="" >
+            <span class="post-title" title="一些javascript小技巧">一些javascript小技巧</span>
+            <span class="post-date" title="2020-03-05 13:28:55">2020/03/05</span>
+        </a>
+        
+        <a  class="javascript "
+           href="/2020/03/05/analyze-eval/"
+           data-tag="javascript"
+           data-author="" >
+            <span class="post-title" title="谈谈eval">谈谈eval</span>
+            <span class="post-date" title="2020-03-05 11:22:09">2020/03/05</span>
+        </a>
+        
+        <a  class="其他 "
+           href="/2020/03/04/windows-system-command/"
+           data-tag="windows"
+           data-author="" >
+            <span class="post-title" title="Windows命令">Windows命令</span>
+            <span class="post-date" title="2020-03-04 12:39:32">2020/03/04</span>
+        </a>
+        
+        <a  class="其他 "
+           href="/2020/03/02/front-end-performance/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="前端性能优化">前端性能优化</span>
+            <span class="post-date" title="2020-03-02 23:32:07">2020/03/02</span>
+        </a>
+        
+        <a  class="其他 "
+           href="/2020/03/02/mac-ssh/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Mac下查看和生成ssh密钥">Mac下查看和生成ssh密钥</span>
+            <span class="post-date" title="2020-03-02 22:44:41">2020/03/02</span>
+        </a>
+        
+        <a  class="其他 "
+           href="/2020/03/02/mac-command/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Mac终端常用命令">Mac终端常用命令</span>
+            <span class="post-date" title="2020-03-02 21:25:29">2020/03/02</span>
+        </a>
+        
+        <a  class="其他 "
+           href="/2020/03/02/modify-chrome-browser-redirection/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="解决Chrome浏览器强制http重定向到https的问题">解决Chrome浏览器强制http重定向到https的问题</span>
+            <span class="post-date" title="2020-03-02 18:03:28">2020/03/02</span>
+        </a>
+        
+        <a  class="hexo "
+           href="/2020/02/29/hexo-mermaid/"
+           data-tag="hexo"
+           data-author="" >
+            <span class="post-title" title="图表mermaid sequence flow">图表mermaid sequence flow</span>
+            <span class="post-date" title="2020-02-29 14:11:10">2020/02/29</span>
+        </a>
+        
+        <a  class="其他 "
+           href="/2020/02/28/asii-table/"
+           data-tag="htmlchar"
+           data-author="" >
+            <span class="post-title" title="HTML特殊字符编码对照表">HTML特殊字符编码对照表</span>
+            <span class="post-date" title="2020-02-28 13:42:03">2020/02/28</span>
+        </a>
+        
+        <a  class="html/css "
+           href="/2020/02/28/css-sense/"
+           data-tag="html/css"
+           data-author="" >
+            <span class="post-title" title="一些css常识">一些css常识</span>
+            <span class="post-date" title="2020-02-28 13:06:58">2020/02/28</span>
+        </a>
+        
+        <a  class="html/css "
+           href="/2020/02/28/css-priority/"
+           data-tag="html/css"
+           data-author="" >
+            <span class="post-title" title="前端基础 - CSS选择器的权重与优先规则">前端基础 - CSS选择器的权重与优先规则</span>
+            <span class="post-date" title="2020-02-28 11:19:06">2020/02/28</span>
+        </a>
+        
+        <a  class=""
+           href="/2020/02/28/emmet-base/"
+           data-tag="emmet,前端小技巧"
+           data-author="" >
+            <span class="post-title" title="关于emmet">关于emmet</span>
+            <span class="post-date" title="2020-02-28 11:09:51">2020/02/28</span>
+        </a>
+        
+        <a  class="javascript "
+           href="/2020/02/27/triva-of-javascript/"
+           data-tag="javascript,前端小技巧"
+           data-author="" >
+            <span class="post-title" title="javascript冷知识">javascript冷知识</span>
+            <span class="post-date" title="2020-02-27 09:12:18">2020/02/27</span>
+        </a>
+        
+        <a  class="webpack "
+           href="/2020/02/25/wepack-base-command/"
+           data-tag="webpack,脚手架工具"
+           data-author="" >
+            <span class="post-title" title="webpack基本命令">webpack基本命令</span>
+            <span class="post-date" title="2020-02-25 17:24:32">2020/02/25</span>
+        </a>
+        
+        <a  class="hexo "
+           href="/2020/02/24/hello-world/"
+           data-tag="hexo"
+           data-author="" >
+            <span class="post-title" title="hexo基本命令">hexo基本命令</span>
+            <span class="post-date" title="2020-02-24 11:38:18">2020/02/24</span>
+        </a>
+        
+    </nav>
+</div>
+    </div>
+    <div class="hide-list">
+        <div class="semicircle">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div class="post">
+    <div class="pjax">
+        
+<article id="post-browser-compatility" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">浏览器兼容问题</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        
+        <span class="tag">
+            
+            <a class="color5">前端面试</a>
+            
+            <a class="color1">前端兼容性</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+        创建时间:<time class="date" title='更新时间: 2020-03-06 18:46:42'>2020-03-06 17:17</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读:<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+        <span class="top-comment" title="跳转至评论区">
+            <a href="#comments">
+                评论:<span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </a>
+        </span>
+        
+    </div>
+    
+
+    <div class="social-share">分享到：</div>
+
+    <script>
+        //var arrShare = [];
+        //var strShare = "<!--% for (var i in theme.shareIcons){ %--><!--%=theme.shareIcons[i] %-->,<!--% } %-->";
+        //arrShare = strShare.split(",");
+        //arrShare.pop();
+        socialShare(".social-share",{
+            //sites:["weibo"],
+            //sites: arrShare,
+            wechatQrcodeTitle: "分享到微信朋友圈",
+            wechatQrcodeHelper: '<p>扫码后点击右上角</p><p>将本文分享至朋友圈</p>'
+        });
+    </script>
+
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#不同浏览器的标签默认的margin和padding不一样"><span class="toc-text">不同浏览器的标签默认的margin和padding不一样</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#IE6双边距bug：块属性标签float后，又有横行的margin情况下，在IE6显示margin比设置的要大。hack：display-inline-将其转化为行内属性。渐进识别的方式，从总体中逐渐排除局部。首先，巧妙的使用9这一标记，将IE浏览器从所有情况中分离出来。接着，再次使用-将IE8-IE7-IE6分离开来，这样IE已经独立识别。"><span class="toc-text">IE6双边距bug：块属性标签float后，又有横行的margin情况下，在IE6显示margin比设置的要大。hack：display:inline;将其转化为行内属性。渐进识别的方式，从总体中逐渐排除局部。首先，巧妙的使用9这一标记，将IE浏览器从所有情况中分离出来。接着，再次使用+将IE8 IE7 IE6分离开来，这样IE已经独立识别。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#getAttribute"><span class="toc-text">getAttribute</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#chrome中小于12px的文本"><span class="toc-text">chrome中小于12px的文本</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#超链接访问过后hover样式不再出现"><span class="toc-text">超链接访问过后hover样式不再出现</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#event对象"><span class="toc-text">event对象</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#png24"><span class="toc-text">png24</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#IE6几种bug解决办法"><span class="toc-text">IE6几种bug解决办法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#visibility和collapse"><span class="toc-text">visibility和collapse</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#css的定位机制"><span class="toc-text">css的定位机制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#浮动带来的问题"><span class="toc-text">浮动带来的问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#清除浮动的方式"><span class="toc-text">清除浮动的方式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#上下margin重合的问题"><span class="toc-text">上下margin重合的问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#什么是CSS-预处理器-后处理器"><span class="toc-text">什么是CSS 预处理器 &#x2F; 后处理器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS优化、提高性能的方法有哪些"><span class="toc-text">CSS优化、提高性能的方法有哪些</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#浏览器是怎样解析CSS选择器的"><span class="toc-text">浏览器是怎样解析CSS选择器的</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#在网页中的应该使用奇数还是偶数的字体？"><span class="toc-text">在网页中的应该使用奇数还是偶数的字体？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#元素竖向的百分比设定是相对于容器的高度吗"><span class="toc-text">元素竖向的百分比设定是相对于容器的高度吗</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#怎么让Chrome支持小于12px-的文字"><span class="toc-text">怎么让Chrome支持小于12px 的文字</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#让页面里的字体变清晰，变细用CSS怎么做"><span class="toc-text">让页面里的字体变清晰，变细用CSS怎么做</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#position-fixed-在-android-下无效怎么处理"><span class="toc-text">position:fixed; 在 android 下无效怎么处理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#如果需要手动写动画，你认为最小时间间隔是多久，为什么"><span class="toc-text">如果需要手动写动画，你认为最小时间间隔是多久，为什么</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#li-与-li-之间有看不见的空白间隔是什么原因引起的？有什么解决办法"><span class="toc-text">li 与 li 之间有看不见的空白间隔是什么原因引起的？有什么解决办法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#display-inline-block-什么时候会显示间隙"><span class="toc-text">display:inline-block 什么时候会显示间隙</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#png、jpg、gif"><span class="toc-text">png、jpg、gif</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#style-标签写在-body-后与-body前有什么区别"><span class="toc-text">style 标签写在 body 后与 body前有什么区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS-Sprites"><span class="toc-text">CSS Sprites</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS-伪类和伪元素"><span class="toc-text">CSS 伪类和伪元素</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#前端页面有哪三层构成"><span class="toc-text">前端页面有哪三层构成</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS引入的方式有哪些？使用Link和-import有什么区别"><span class="toc-text">CSS引入的方式有哪些？使用Link和@import有什么区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#浏览器内核的理解"><span class="toc-text">浏览器内核的理解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#常见的浏览器内核"><span class="toc-text">常见的浏览器内核</span></a></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="不同浏览器的标签默认的margin和padding不一样"><a href="#不同浏览器的标签默认的margin和padding不一样" class="headerlink" title="不同浏览器的标签默认的margin和padding不一样"></a>不同浏览器的标签默认的margin和padding不一样</h2><p>通过把页面中用到的元素 margin padding初始设置成0来解决</p>
+<h2 id="IE6双边距bug：块属性标签float后，又有横行的margin情况下，在IE6显示margin比设置的要大。hack：display-inline-将其转化为行内属性。渐进识别的方式，从总体中逐渐排除局部。首先，巧妙的使用9这一标记，将IE浏览器从所有情况中分离出来。接着，再次使用-将IE8-IE7-IE6分离开来，这样IE已经独立识别。"><a href="#IE6双边距bug：块属性标签float后，又有横行的margin情况下，在IE6显示margin比设置的要大。hack：display-inline-将其转化为行内属性。渐进识别的方式，从总体中逐渐排除局部。首先，巧妙的使用9这一标记，将IE浏览器从所有情况中分离出来。接着，再次使用-将IE8-IE7-IE6分离开来，这样IE已经独立识别。" class="headerlink" title="IE6双边距bug：块属性标签float后，又有横行的margin情况下，在IE6显示margin比设置的要大。hack：display:inline;将其转化为行内属性。渐进识别的方式，从总体中逐渐排除局部。首先，巧妙的使用9这一标记，将IE浏览器从所有情况中分离出来。接着，再次使用+将IE8 IE7 IE6分离开来，这样IE已经独立识别。"></a>IE6双边距bug：块属性标签float后，又有横行的margin情况下，在IE6显示margin比设置的要大。hack：display:inline;将其转化为行内属性。渐进识别的方式，从总体中逐渐排除局部。首先，巧妙的使用9这一标记，将IE浏览器从所有情况中分离出来。接着，再次使用+将IE8 IE7 IE6分离开来，这样IE已经独立识别。</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attribute">background-color</span>:<span class="number">#f1ee18</span>;<span class="comment">/*所有识别*/</span></span><br><span class="line">    <span class="attribute">background-color</span>:<span class="number">#00deff</span>\<span class="number">9</span>;<span class="comment">/*IE6、7、8识别*/</span></span><br><span class="line">    +background-color:#a200ff;/*IE6、7识别*/</span><br><span class="line">    _<span class="selector-tag">background-color</span>:<span class="selector-id">#1e0bd1</span>;<span class="comment">/*IE6识别*/</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="getAttribute"><a href="#getAttribute" class="headerlink" title="getAttribute"></a>getAttribute</h2><p>IE下，可以使用获取常规属性的方法来获取自定义属性,也可以使用getAttribute()获取自定义属性；Firefox下，只能使用getAttribute()获取自定义属性。解决方法:统一通过getAttribute()获取自定义属性。</p>
+<h2 id="chrome中小于12px的文本"><a href="#chrome中小于12px的文本" class="headerlink" title="chrome中小于12px的文本"></a>chrome中小于12px的文本</h2><p>Chrome 中文界面下默认会将小于 12px 的文本强制按照 12px 显示,可通过加入 CSS 属性 -webkit-text-size-adjust: none; 解决。</p>
+<h2 id="超链接访问过后hover样式不再出现"><a href="#超链接访问过后hover样式不再出现" class="headerlink" title="超链接访问过后hover样式不再出现"></a>超链接访问过后hover样式不再出现</h2><p>因为被被点击访问过的超链接样式不再具有hover和active了。解决办法是改变css属性的排列顺序：L-V-H-A<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:link</span>&#123;&#125;</span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:visited</span>&#123;&#125;</span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:hover</span>&#123;&#125;</span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:active</span>&#123;&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="event对象"><a href="#event对象" class="headerlink" title="event对象"></a>event对象</h2><p>IE下，event对象有x、y属性，但是没有pageX、pageY属性；Firefox下，event对象有pageX，pageY属性，但是没有x，y属性<br>解决办法：（条件注释）缺点是在IE浏览器下可能会增加额外的HTTP请求数</p>
+<h2 id="png24"><a href="#png24" class="headerlink" title="png24"></a>png24</h2><p>png24位的图片在IE6浏览器上出现背景，解决方案是做成PNG8</p>
+<h2 id="IE6几种bug解决办法"><a href="#IE6几种bug解决办法" class="headerlink" title="IE6几种bug解决办法"></a>IE6几种bug解决办法</h2><p>1.双边距BUGfloat引起的 使用display<br>2.3像素问题 使用float引起的 使用display：inline -3px<br>3.超链接hover点击后失效 使用正确的书写顺序link visited hover active<br>4.le z-index问题 给父级添加position:relative<br>5.png透明，使用js代码改<br>6.min-height最小高度 !!important解决<br>7.select在ie6下遮盖，使用iframe嵌套<br>8.为什么没有办法定义1px左右的宽度容器(IE)<br>9.ie6不支持!important</p>
+<h2 id="visibility和collapse"><a href="#visibility和collapse" class="headerlink" title="visibility和collapse"></a>visibility和collapse</h2><p>当一个元素的visibility属性被设置成collapse值后，对一般的元素，它的表现跟hidden一样的，但例外的是，如果这个元素是table相关的元素，例如table行，table group，table列，table column group，它的表现却跟display:none一样，也就是说，它们占用的空间也会释放。<br>在谷歌浏览器里，使用collapse和使用hidden没有什么区别。<br>在火狐浏览器、opera和ie11里，使用collapse值的效果就如它的字面意思：table的行会小时，它的下面一行会补充它的位置</p>
+<h2 id="css的定位机制"><a href="#css的定位机制" class="headerlink" title="css的定位机制"></a>css的定位机制</h2><p>普通流，浮动，绝对定位（position：fixed是position：absolute的一个子类）。浮动的框可以左右移动，直到它的外边缘遇到包含框或者另一个浮动框的边缘，所以才说浮动定位不属于正常的页面流。文档中的普通流就会表现得和浮动框不存在一样，当浮动框高度超出包含框的时候，就会出现包含框不会自动伸缩高度类笔盒浮动元素。所以，只含有浮动元素的父容器在显示时不需要考虑子元素的位置，就造成显示父容器像空容器一样。</p>
+<h2 id="浮动带来的问题"><a href="#浮动带来的问题" class="headerlink" title="浮动带来的问题"></a>浮动带来的问题</h2><ul>
+<li>父元素的高度无法被撑开，影响与父元素同级的元素</li>
+<li>与浮动元素同级的非浮动元素（内联元素）会跟随其后</li>
+<li>若非第一个元素浮动，则该元素之前的元素也需要浮动，否则会影响页面显示的结构。</li>
+</ul>
+<h2 id="清除浮动的方式"><a href="#清除浮动的方式" class="headerlink" title="清除浮动的方式"></a>清除浮动的方式</h2><ul>
+<li>父级div定义height</li>
+<li>最后一个浮动元素后加空 div 标签 并添加样式 clear:both。（理论上能清除任何标签，增加无意义的标签）</li>
+<li>包含浮动元素的父标签添加样式 overflow 为 hidden 或 auto。</li>
+<li>父级 div 定义 zoom（空标签元素清除浮动而不得不增加无意义代码的弊端，使用zoom:1用于兼容IE）</li>
+<li>用after伪元素清除浮动（用于非IE浏览器）<br>原理如下<br>1、父级div定义height<blockquote>
+<p>原理：父级div手动定义height，就解决了父级div无法自动获取到高度的问题<br>优点：简单，代码少，容易掌握<br>缺点：只适合高度固定的布局，要给出精确的高度，如果高度和父级div不一样时，会产生问题<br>建议：不推荐使用，只建议高度固定的布局时使用<br>2、结尾处加空 div 标签 clear:both<br>原理：添加一个空div，利用css提高的clear:both清除浮动，让父级div能自动获取到高度<br>优点：简单，代码少，浏览器支持好，不容易出现怪问题<br>缺点：不少初学者不理解原理；如果页面浮动布局多，就要增加很多空div，让人感觉很不爽<br>建议：不推荐使用，但此方法是以前主要使用的一种清除浮动方法</p>
+</blockquote>
+</li>
+</ul>
+<p>3.父级 div 定义 overflow:hidden<br>原理：必须定义width或zoom:1，同时不能定义height，使用overflow:hidden时，浏览器会自动检查浮动区域的高度<br>优点：简单，代码少，浏览器支持好<br>缺点：不能和position配合使用，因为超出的尺寸的会被隐藏<br>建议：只推荐没有使用position或对overflow:hidden理解比较深的朋友使用</p>
+<p>4.父级div定义伪类 :after 和 zoom<br>原理：IE8以上和非IE浏览器才支持:after，原理和方法2有点类似，zoom(IE转有属性)可解决ie6,ie7浮动问题<br>优点：浏览器支持好，不容易出现怪问题（目前：大型网站都有使用，如：腾迅，网易，新浪等等）<br>缺点：代码多，不少初学者不理解原理，要两句代码结合使用，才能让主流浏览器都支持<br>建议：推荐使用，建议定义公共类，以减少CSS代码</p>
+<p>(1) 在子元素后添加一个空div div{clear:both;}<br>(2) 在父元素中{overflow:hidden|auto;zoom:1}<br>(3) :after伪选择符，在父容器的尾部自动创建一个子元素<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.clearfix</span><span class="selector-pseudo">:after</span> &#123;</span><br><span class="line">    <span class="attribute">content</span>: <span class="string">"\0020"</span>;<span class="attribute">display</span>: block;<span class="attribute">height</span>: <span class="number">0</span>;<span class="attribute">clear</span>: both;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.clearfix</span> &#123;</span><br><span class="line">    <span class="attribute">zoom</span>: <span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>“clearfix”是父容器的class名称，”content:”020”;”是在父容器的结尾处放一个空白符，<br>“height:0;”是让这个这个空白字符不显示出来，”display:block; clear: both;”是确保这个空白字符是非浮动的独立区块。:after选择符IE 6不支持,添加一条IE 6的独有命令”zoom:1;”就行了.</p>
+<h2 id="上下margin重合的问题"><a href="#上下margin重合的问题" class="headerlink" title="上下margin重合的问题"></a>上下margin重合的问题</h2><p>在重合元素外包裹一层容易，并出发该容易生成一个BFC<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"aside"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"text"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"main"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--下面是css代码--&gt;</span></span><br><span class="line"> .aside &#123;</span><br><span class="line">            margin-bottom: 100px;</span><br><span class="line">            width: 100px;</span><br><span class="line">            height: 150px;</span><br><span class="line">            background: #f66;</span><br><span class="line">        &#125;</span><br><span class="line">        .main &#123;</span><br><span class="line">            margin-top: 100px;</span><br><span class="line">            height: 200px;</span><br><span class="line">            background: #fcc;</span><br><span class="line">        &#125;</span><br><span class="line">         .text&#123;</span><br><span class="line">/*盒子main的外面包一个div，通过改变此div的属性使两个盒子分属于两个不同的BFC，以此来阻止margin重叠*/</span><br><span class="line">            overflow: hidden;  //此时已经触发了BFC属性。</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="什么是CSS-预处理器-后处理器"><a href="#什么是CSS-预处理器-后处理器" class="headerlink" title="什么是CSS 预处理器 / 后处理器"></a>什么是CSS 预处理器 / 后处理器</h2><p>预处理器例如：LESS、Sass、Stylus，用来预编译Sass或less，增强了css代码的复用性，还有层级、mixin、变量、循环、函数等，具有很方便的UI组件模块化开发能力，极大的提高工作效率。</p>
+<p>后处理器例如：PostCSS，通常被视为在完成的样式表中根据CSS规范处理CSS，让其更有效；目前最常做的是给CSS属性添加浏览器私有前缀，实现跨浏览器兼容性的问题。</p>
+<p>CSS 预处理器为 CSS 增加一些编程的特性，无需考虑浏览器的兼容性问题”，例如你可以在 CSS 中使用变量、简单的逻辑程序、函数（如右侧代码编辑器中就使用了变量$color）等等在编程语言中的一些基本特性，可以让你的 CSS 更加简洁、适应性更强、可读性更佳，更易于代码的维护等诸多好处。</p>
+<p>其它 CSS 预处理器语言：</p>
+<ul>
+<li>Sass（SCSS）</li>
+<li>LESS</li>
+<li>Stylus</li>
+<li>Turbine</li>
+<li>Swithch CSS</li>
+<li>CSS Cacheer</li>
+<li>DT CSS</li>
+</ul>
+<p>结构清晰，便于扩展。可以方便地屏蔽浏览器私有语法差异。这个不用多说，封装对浏览器语法差异的重复处理，减少无意义的机械劳动。可以轻松实现多重继承。</p>
+<h2 id="CSS优化、提高性能的方法有哪些"><a href="#CSS优化、提高性能的方法有哪些" class="headerlink" title="CSS优化、提高性能的方法有哪些"></a>CSS优化、提高性能的方法有哪些</h2><p>避免过度约束<br>避免后代选择符<br>避免链式选择符使用紧凑的语法<br>避免不必要的命名空间<br>避免不必要的重复<br>最好使用表示语义的名字。一个好的类名应该是描述他是什么而不是像什么<br>避免！important，可以选择其他选择器<br>尽可能的精简规则，你可以合并不同类里的重复规则<br>修复解析错误<br>避免使用多类选择符<br>移除空的css规则。<br>正确使用display的属性：由于display的作用，某些样式组合会无效，徒增样式体积的同时也影响解析性能。</p>
+<blockquote>
+<p>display:inline后不应该再使用width、height、margin、padding以及float。<br>display:inline-block后不应该再使用float。<br>display:block后不应该再使用vertical-align。<br>display:table-*后不应该再使用margin或者float。<br>不滥用浮动：虽然浮动不可避免，但不可否认很多css bug是由于浮动而引起。<br>不滥用web字体,对于中文网站来说Web Fonts可能很陌生，国外却很流行。web fonts通常体积庞大，而且一些浏览器在下载web fonts时会阻塞页面渲染损伤性能。<br>不声明过多的font-size：这是设计层面的问题，设计精良的页面不会有过多的font-size声明。<br>不在选择符中使用ID标识符，主要考虑到样式重用性以及与页面的耦合性。<br>不给h1~h6元素定义过多的样式<br>全站统一定义一遍heading元素即可，若需额外定制样式，可使用其他选择符作为代替。<br>不重复定义h1~h6元素<br>值为0时不需要任何单位<br>标准化各种浏览器前缀：通常将浏览器前缀置于前面，将标准样式属性置于最后，类似：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.foo</span>&#123;</span><br><span class="line">    <span class="attribute">-moz-border-radius</span>: <span class="number">5px</span>;</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">5px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br>使用CSS渐变等高级特性，需指定所有浏览器的前缀<br>避免让选择符看起来像正则表达式<br>CSS3添加了一些类似~=等复杂属性，也不是所有浏览器都支持，需谨慎使用。<br>遵守盒模型规则（Beware of broken box models）</p>
+</blockquote>
+<h2 id="浏览器是怎样解析CSS选择器的"><a href="#浏览器是怎样解析CSS选择器的" class="headerlink" title="浏览器是怎样解析CSS选择器的"></a>浏览器是怎样解析CSS选择器的</h2><p>CSS选择器的解析是从右向左解析的，为了避免对所有元素进行遍历。若从左向右的匹配，发现不符合规则，需要进行回溯，会损失很多性能。若从右向左匹配，先找到所有的最右节点，对于每一个节点，向上寻找其父节点直到找到根元素或满足条件的匹配规则，则结束这个分支的遍历。两种匹配规则的性能差别很大，是因为从右向左的匹配在第一步就筛选掉了大量的不符合条件的最右节点（叶子节点），而从左向右的匹配规则的性能都浪费在了失败的查找上面。而在 CSS 解析完毕后，需要将解析的结果与 DOM Tree 的内容一起进行分析建立一棵 Render Tree，最终用来进行绘图。在建立 Render Tree 时（WebKit 中的「Attachment」过程），浏览器就要为每个 DOM Tree 中的元素根据 CSS 的解析结果（Style Rules）来确定生成怎样的 Render Tree。</p>
+<h2 id="在网页中的应该使用奇数还是偶数的字体？"><a href="#在网页中的应该使用奇数还是偶数的字体？" class="headerlink" title="在网页中的应该使用奇数还是偶数的字体？"></a>在网页中的应该使用奇数还是偶数的字体？</h2><p>使用偶数字体。偶数字号相对更容易和 web 设计的其他部分构成比例关系。Windows 自带的点阵宋体（中易宋体）从 Vista 开始只提供 12、14、16 px 这三个大小的点阵，而 13、15、17 px时用的是小一号的点。（即每个字占的空间大了 1 px，但点阵没变），于是略显稀疏。</p>
+<h2 id="元素竖向的百分比设定是相对于容器的高度吗"><a href="#元素竖向的百分比设定是相对于容器的高度吗" class="headerlink" title="元素竖向的百分比设定是相对于容器的高度吗"></a>元素竖向的百分比设定是相对于容器的高度吗</h2><p>当按百分比设定一个元素的宽度时，它是相对于父容器的宽度计算的，但是，对于一些表示竖向距离的属性，例如 padding-top , padding-bottom , margin-top , margin-bottom 等，当按百分比设定它们时，依据的也是父容器的宽度，而不是高度。</p>
+<h2 id="怎么让Chrome支持小于12px-的文字"><a href="#怎么让Chrome支持小于12px-的文字" class="headerlink" title="怎么让Chrome支持小于12px 的文字"></a>怎么让Chrome支持小于12px 的文字</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">p</span>&#123;</span><br><span class="line">    <span class="attribute">font-size</span>:<span class="number">10px</span>;</span><br><span class="line">    -webkit-transform:scale(0.8);//0.8是缩放比例</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="让页面里的字体变清晰，变细用CSS怎么做"><a href="#让页面里的字体变清晰，变细用CSS怎么做" class="headerlink" title="让页面里的字体变清晰，变细用CSS怎么做"></a>让页面里的字体变清晰，变细用CSS怎么做</h2><p>-webkit-font-smoothing 在 window 系统下没有起作用，但是在 IOS 设备上起作用 -webkit-font-smoothing：antialiased 是最佳的，灰度平滑。</p>
+<h2 id="position-fixed-在-android-下无效怎么处理"><a href="#position-fixed-在-android-下无效怎么处理" class="headerlink" title="position:fixed; 在 android 下无效怎么处理"></a>position:fixed; 在 android 下无效怎么处理</h2><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+
+<h2 id="如果需要手动写动画，你认为最小时间间隔是多久，为什么"><a href="#如果需要手动写动画，你认为最小时间间隔是多久，为什么" class="headerlink" title="如果需要手动写动画，你认为最小时间间隔是多久，为什么"></a>如果需要手动写动画，你认为最小时间间隔是多久，为什么</h2><p>多数显示器默认频率是60Hz，即1秒刷新60次，所以理论上最小间隔为1/60＊1000ms ＝ 16.7ms。</p>
+<h2 id="li-与-li-之间有看不见的空白间隔是什么原因引起的？有什么解决办法"><a href="#li-与-li-之间有看不见的空白间隔是什么原因引起的？有什么解决办法" class="headerlink" title="li 与 li 之间有看不见的空白间隔是什么原因引起的？有什么解决办法"></a>li 与 li 之间有看不见的空白间隔是什么原因引起的？有什么解决办法</h2><p>行框的排列会受到中间空白（回车空格）等的影响，因为空格也属于字符,这些空白也会被应用样式，占据空间，所以会有间隔，把字符大小设为0，就没有空格了。<br>解决办法</p>
+<blockquote>
+<p>可以将<li>代码全部写在一排<br>浮动li中float：left<br>在ul中用font-size：0（谷歌不支持）；<br>可以将 ul{letter-spacing: -4px;};li{letter-spacing: normal;}</p>
+</blockquote>
+<h2 id="display-inline-block-什么时候会显示间隙"><a href="#display-inline-block-什么时候会显示间隙" class="headerlink" title="display:inline-block 什么时候会显示间隙"></a>display:inline-block 什么时候会显示间隙</h2><p>有空格时候会有间隙 解决：s除空格<br>margin正值的时候 解决：margin使用负值<br>使用font-size时候 解决：font-size:0、letter-spacing、word-spacing</p>
+<h2 id="png、jpg、gif"><a href="#png、jpg、gif" class="headerlink" title="png、jpg、gif"></a>png、jpg、gif</h2><p>png是便携式网络图片（Portable Network Graphics）是一种无损数据压缩位图文件格式.优点是：压缩比高，色彩好。 大多数地方都可以用。<br>jpg是一种针对相片使用的一种失真压缩方法，是一种破坏性的压缩，在色调及颜色平滑变化做的不错。在www上，被用来储存和传输照片的格式。<br>gif是一种位图文件格式，以8位色重现真色彩的图像。可以实现动画效果.<br>webp格式是谷歌在2010年推出的图片格式，压缩率只有jpg的2/3，大小比png小了45%。缺点是压缩的时间更久了，兼容性不好，目前谷歌和opera支持。</p>
+<h2 id="style-标签写在-body-后与-body前有什么区别"><a href="#style-标签写在-body-后与-body前有什么区别" class="headerlink" title="style 标签写在 body 后与 body前有什么区别"></a>style 标签写在 body 后与 body前有什么区别</h2><p>页面加载自上而下 当然是先加载样式。写在 body 标签后由于浏览器以逐行方式对HTML文档进行解析，当解析到写在尾部的样式表（外联或写在 style 标签）会导致浏览器停止之前的渲染，等待加载且解析样式表完成之后重新渲染，在windows的IE下可能会出现 FOUC 现象（即样式失效导致的页面闪烁问题）</p>
+<h2 id="CSS-Sprites"><a href="#CSS-Sprites" class="headerlink" title="CSS Sprites"></a>CSS Sprites</h2><p>CSS Sprites小图片背景共享技术。它把一堆小的图片整合到一张大的图片上。然后利用CSS的 background-image，background- repeat，background-position 的组合进行背景定位。利用CSS Sprites能很好地减少网页的http请求，从而大大的提高页面的性能；CSS Sprites能减少图片的字节。<br>优势：<br>1.很好的减少网页的请求，大大提高页面的性能；<br>2.减少图片的字节；<br>3.解决了网页设计师在图片命名上的困扰；<br>4.更换风格方便，维护方便。<br>劣势：<br>1.图片合并时需预留好足够空间，宽屏、高分辨率的屏幕下易出现背景断裂；<br>2.开发较麻烦，测量繁琐；（可使用样式生成器）<br>3.维护麻烦，背景少许改动有可能影响整张图片，使得字节增加还要改动css。</p>
+<h2 id="CSS-伪类和伪元素"><a href="#CSS-伪类和伪元素" class="headerlink" title="CSS 伪类和伪元素"></a>CSS 伪类和伪元素</h2><p>伪类： :focus、:hover、:active伪元素：:before、:after伪类本质上是为了弥补常规CSS选择器的不足，以便获取到更多信息；伪元素本质上是创建了一个有内容的虚拟容器；CSS3中伪类和伪元素的语法不同；可以同时使用多个伪类，而只能同时使用一个伪元素；</p>
+<h2 id="前端页面有哪三层构成"><a href="#前端页面有哪三层构成" class="headerlink" title="前端页面有哪三层构成"></a>前端页面有哪三层构成</h2><p>结构层 Html 表示层 CSS 行为层 js</p>
+<h2 id="CSS引入的方式有哪些？使用Link和-import有什么区别"><a href="#CSS引入的方式有哪些？使用Link和-import有什么区别" class="headerlink" title="CSS引入的方式有哪些？使用Link和@import有什么区别"></a>CSS引入的方式有哪些？使用Link和@import有什么区别</h2><p>答：内联，内嵌，外链，导入<br>（1）link 属于 XHTML 标签，除了加载 CSS 外，还能用于定义RSS，定义 rel 连接属性等作用，无兼容性，支持使用javascript改变样式；而@import是CSS提供的，只能用于加载CSS，不支持使用 javascript 改变样式；<br>（2）页面被加载的时，link 会被同时加载，而@import 引用的CSS会等到页面加载完再加载；（3）import是CSS2.1 提出的，CSS2.1以下浏览器不支持，只在IE5以上才能被识别，而link是XHTML标签，无兼容问题。</p>
+<h2 id="浏览器内核的理解"><a href="#浏览器内核的理解" class="headerlink" title="浏览器内核的理解"></a>浏览器内核的理解</h2><p>渲染引擎（layout engineer或Rendering Engine）和 JS 引擎。<br>（1）渲染引擎：负责取得网页的内容（HTML、XML、图像等等）、整理讯息（例如加入CSS等），以及计算网页的显示方式，然后会输出至显示器或打印机。浏览器的内核的不同对于网页的语法解释会有不同，所以渲染的效果也不相同。所有网页浏览器、电子邮件客户以及其他它所需要编辑、显示网络的应用程序都需要内核<br>(2）JS引擎则：解析和执行JavaScript 来实现网页的动态效果；</p>
+<h2 id="常见的浏览器内核"><a href="#常见的浏览器内核" class="headerlink" title="常见的浏览器内核"></a>常见的浏览器内核</h2><p>Trident内核：IE,MaxThon,TT,The World,360,搜狗浏览器等。[又称MSHTML]<br>Gecko内核：Netscape6及以上版本，FF,MozillaSuite/SeaMonkey等。<br>Presto内核：Opera7及以上。[Opera内核原为：Presto，现为：Blink;]<br>Webkit内核：Safari,Chrome等。[ Chrome的：Blink（WebKit的分支）]<br>EdgeHTML内核：Microsoft Edge。[此内核其实是从MSHTML fork而来，删掉了几乎所有的IE私有特性]</p>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 673222391@qq.com哦! </span>
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">赏</a>
+</p>
+
+
+<div class="article_copyright">
+    文章:<code class="article_number"></code>篇
+    总字数:<code class="site_word_count"></code>字
+    访问人数：<code class="site_uv"></code>人，访问量：<code class="site_pv"></code>次。
+    <p><span class="copy-title">文章标题:</span>浏览器兼容问题</p>
+    
+    <p><span class="copy-title">本文作者:</span><a  title="Eva">Eva</a></p>
+    <p><span class="copy-title">发布时间:</span>2020-03-06, 17:17:22</p>
+    <p><span class="copy-title">最后更新:</span>2020-03-06, 18:46:42</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/03/06/browser-compatility/" title="浏览器兼容问题">http://eva1314kawayi.com/2020/03/06/browser-compatility/</a>
+    <p>
+        <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+    </p>
+</div>
+
+
+
+    <div id="comments"></div>
+<link rel="stylesheet" href="/css/gitalk.css">
+
+<script type="text/javascript">
+    $.getScript('/js/gitalk.js', function () {
+        var gitalk = new Gitalk({
+            clientID: '90e3f37d37b4f43973dd',
+            clientSecret: '1916645b46aeef3cb154d17fe235f38b3554f2c8',
+            repo: 'Evashasha.github.io',
+            owner: 'Evashasha',
+            admin: ['Evashasha'],
+            id: decodeURI(location.pathname),
+            distractionFreeMode: 'true',
+            language: 'zh-CN',
+            perPage: parseInt('10',10)
+        })
+        gitalk.render('comments')
+    })
+</script>
+
+
+
+
+    
+
+
+
+
+
+<div><a href="http://eva1314kawayi.com/2020/03/09/node-base/">上一篇：node基础入门相关</a></div>
+
+
+<div><a href="http://eva1314kawayi.com/2020/03/06/interview-css/">下一篇：css面试题收集</a></div>
+
+
+
+    </div>
+    <div class="copyright">
+        <p class="footer-entry">©2016-2019 Eva</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
+
+    </div>
+    <div class="full-toc">
+        <button class="full"><span class="min "></span></button>
+<button class="post-toc-menu"><span class="post-toc-menu-icons"></span></button>
+<button class="netease-music"><span class="netease-music-icons"><svg class="icon icon-music"><use xlink:href="#icon-music"></use></svg></span></button>
+<div class="post-toc"><span class="post-toc-title">目录</span>
+    <div class="post-toc-content">
+
+    </div>
+</div>
+<a class="" id="rocket" ></a>
+<div id="music-container">
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="//music.163.com/outchain/player?type=0&id=2309465786&auto=1&height=430"></iframe>
+    <!--<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="//music.163.com/outchain/player?type=1&id=6484&auto=1&height=430"></iframe>-->
+</div>
+
+    </div>
+</div>
+<div class="acParent"></div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close"  onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>喜欢就点赞,疼爱就打赏</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">支付宝</label></span><span><label><input type="radio" name="pay" value="weixin">微信</label></span>
+    </div>
+</div>
+
+
+<script type="text/javascript"
+color="255,255,255" opacity='1' zIndex="-2" count="100" src="/js/canvas-nest.min.js?v=1.0.1"></script>
+<script src="/js/jquery.pjax.js?v=1.0.1" ></script>
+
+<script src="/js/script.js?v=1.0.1" ></script>
+<script>
+    var img_resize = 'default';
+    /*作者、标签的自动补全*/
+    $(function () {
+        $('.search').AutoComplete({
+            'data': ['#javascript','#htmlchar','#前端面试','#前端兼容性','#html/css','#emmet','#前端小技巧','#hexo','#webpack','#脚手架工具','#windows',],
+            'itemHeight': 20,
+            'width': 418
+        }).AutoComplete('show');
+    })
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $(".post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+        $('pre code').each(function(){
+            var lines = $(this).text().split('\n').length - 1, widther='';
+            if (lines>99) {
+                widther = 'widther'
+            }
+            var $numbering = $('<ul/>').addClass('pre-numbering ' + widther).attr("unselectable","on");
+            $(this).addClass('has-numbering ' + widther)
+                    .parent()
+                    .append($numbering);
+            for(var i=1;i<=lines;i++){
+                $numbering.append($('<li/>').text(i));
+            }
+        });
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+        /* 渲染*/
+        function HTMLDecode(text) {
+            var temp = document.createElement("div");
+            temp.innerHTML = text;
+            var output = temp.innerText || temp.textContent;
+            temp = null;
+            return output;
+        }
+        if (window.mermaid){
+            window.mermaid = null
+        }
+        $.getScript("//cdn.jsdelivr.net/npm/mermaid@8.4.2/dist/mermaid.min.js", function () {
+            var mermaidOptions = JSON.parse(HTMLDecode("{&#34;theme&#34;:&#34;default&#34;,&#34;startOnLoad&#34;:true,&#34;flowchart&#34;:{&#34;useMaxWidth&#34;:false,&#34;htmlLabels&#34;:true}}"))
+            if (window.mermaid) {
+                mermaid.initialize(mermaidOptions)
+                mermaid.contentLoaded()
+            }
+        })
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<style>
+    pre{
+        position: relative;
+        margin-bottom: 24px;
+        border-radius: 10px;
+        bo-rder: 1px solid #e2dede;
+        background: #FFF;
+        overflow: hidden;
+    }
+    code.has-numbering{
+        margin-left: 30px;
+    }
+    code.has-numbering.widther{
+        margin-left: 35px;
+    }
+    .pre-numbering{
+        margin: 0px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        padding: 0.5em 3px 0.7em 5px;
+        border-right: 1px solid #C3CCD0;
+        text-align: right;
+        color: #AAA;
+        background-color: #fafafa;
+    }
+    .pre-numbering.widther {
+        width: 35px;
+    }
+</style>
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+        .nav .hide-list.fullscreen {
+            left: 492px
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #fff;
+    }
+    
+    
+
+    /*列表样式*/
+    
+    .post .pjax article .article-entry>ol, .post .pjax article .article-entry>ul, .post .pjax article>ol, .post .pjax article>ul{
+        border: #e2dede solid 1px;
+        border-radius: 10px;
+        padding: 10px 32px 10px 56px;
+    }
+    .post .pjax article .article-entry li>ol, .post .pjax article .article-entry li>ul,.post .pjax article li>ol, .post .pjax article li>ul{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .post .pjax article .article-entry>ol>li, .post .pjax article .article-entry>ul>li,.post .pjax article>ol>li, .post .pjax article>ul>li{
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+    .post .pjax article .article-entry li>ol>li, .post .pjax article .article-entry li>ul>li,.post .pjax article li>ol>li, .post .pjax article li>ul>li{
+        margin-bottom: auto;
+        margin-left: auto;
+    }
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+    .nav-right:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+        background: url("/img/peach_flower.jpeg");
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    
+
+    
+</style>
+
+
+
+
+
+
+<div class="mobile-menus-out" >
+
+</div>
+<div class="mobile-menus">
+    
+    
+    <a class="dynamic-menu " target="_self"   href="/photos">相册</a>
+    
+    
+    <a class="dynamic-menu site_url"   href="/resume">简历</a>
+    
+    
+    
+</div>
+
+</body>
+
+<script>L2Dwidget.init({ model: { jsonPath: "/live2dw/assets/shizuku.model.json" }, display: { position: "right" }, mobile: { show: !1 }, log: !1, pluginJsPath: "lib/", pluginModelPath: "assets/", pluginRootPath: "live2dw/", tagMode: !1 })</script>
+</html>

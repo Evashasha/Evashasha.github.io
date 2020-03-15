@@ -238,6 +238,16 @@
     right: 0px;
     opacity: 0.7;
   }
+  .full-toc .netease-music {
+    top: 85px;
+    right: 0px;
+    opacity: 0.7;
+  }
+  .full-toc #music-container {
+    top: 20px;
+    right: 50%;
+    transform: translateX(50%);
+  }
   .full-toc #rocket {
     right: -7px;
   }
